@@ -1,0 +1,33 @@
+<h3>Request to be an Admin below. </h3>
+<form method="POST" action="https://formspree.io/hope.l.banks@gmail.com" (submit)="onSubmit()">
+  <div class="control-group">
+    <div class="form-group">
+      <label>Name:</label>
+      <br />
+      <input style="text-align:center" type="text" class="form-control" placeholder="Your Name" id="name" required
+        data-validation-required-message="Please enter your name" name="name">
+    </div>
+  </div>
+  <br />
+  <div class="control-group">
+    <div class="form-group">
+      <label>Email Address:</label>
+      <br />
+      <input style="text-align:center" type="email" class="form-control" placeholder="Your Email" id="email"
+        required data-validation-required-message="Please enter your email" name="_replyto">
+    </div>
+  </div>
+  <br />
+  <div class="control-group">
+    <div class="form-group">
+      <textarea style="text-align:center" class="form-control" rows="7" placeholder="Your Message" id="message"
+        required data-validation-required-message="Please leave a message" name="message"></textarea>
+    </div>
+  </div>
+  <div class="text-center">
+    <div id="success"></div>
+    <button class="btn2" type="submit">
+      Contact Me
+    </button>
+  </div>
+</form>

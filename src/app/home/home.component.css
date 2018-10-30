@@ -4,7 +4,6 @@
   background-size: cover;
   height: 90vh;
   width: 100%;
-  
 }
 
 .logo {
@@ -22,6 +21,11 @@
 }
 
 .wrapper {
+  text-align: center;
+  padding: 5em;
+}
+
+/* .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -43,5 +47,5 @@
 .pRight {
   grid-column: 3;
   color: black;
-}
+} */
 
