@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { first } from 'rxjs/operators';
-
+import { FormControl } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
-import { AlertService } from '../services/alert.service';
-import { Alert } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-login',
@@ -13,58 +8,23 @@ import { Alert } from 'selenium-webdriver';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup;
-  loading = false;
-  submitted = false;
-  returnUrl: string;
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private route: ActivatedRoute,
-    private router: Router,
-    private authService: AuthService,
-    private alertService: AlertService
-  ) {
-    //redirect to home if already logged in
-    if(this.authService.currentUserValue) {
-      this.router.navigate(['/'])
-    } 
-  }
+  username = new FormControl('')
+  password = new FormControl('')
+
+  constructor(private auth: AuthService) {}
 
   ngOnInit() {
-    this.loginForm = this.formBuilder.group({
-      username: ['', Validators.required],
-      email: ['', Validators.required],
-      password: ['', Validators.required]
+  }
+
+  login() {
+    this.auth.login(this.username.value, this.password.value)
+    .subscribe(user => {
+      console.log(user)
+      sessionStorage.setItem('token', user.sessionToken)
+      alert(`Welcome ${user.user.username}!`)
+      window.location.href = '/home'
     })
-  
-  //get return url from route parameters or default to '/'
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
-
-  get f() { return this.loginForm.controls; }
-
-  onSubmit() {
-    this.submitted = true;
-
-    //stop here if form is invalid
-    if (this.loginForm.invalid) {
-      return;
-    }
-
-    this.loading = true;
-    this.authService.login(this.f.username.value, this.f.email.value, this.f.password.value)
-      .pipe(first())
-      .subscribe(
-        data => {
-          this.router.navigate([this.returnUrl])
-        },
-        error => {
-          this.alertService.error(error)
-          this.loading = false;
-        }
-      )
-  }
-
 
 }

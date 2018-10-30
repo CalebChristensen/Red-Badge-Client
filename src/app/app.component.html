@@ -2,8 +2,9 @@
   <mat-card>
     <button mat-raised-button routerLink="/">Home</button>
     <button mat-raised-button routerLink="/about">About</button>
-    <button mat-raised-button routerLink="/signup">Sign Up</button>
-    <button mat-raised-button routerLink="/login">Log In</button>
+    <button mat-raised-button routerLink="/signup" *ngIf='!token'>Sign Up</button>
+    <button mat-raised-button routerLink="/login" *ngIf='!token'>Log In</button>
+    <button mat-raised-button (click)='logout()' *ngIf='token'>Logout</button>
   </mat-card>
 </div>
 <router-outlet></router-outlet>

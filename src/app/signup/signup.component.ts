@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { AuthService } from '../services/auth.service'
 
 @Component({
   selector: 'app-signup',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  
+  username = new FormControl('')
+  email = new FormControl('')
+  password = new FormControl('')
 
-  constructor() { }
+  constructor(private auth: AuthService) { }
 
   ngOnInit() {
+  }
+
+  signUp() {
+    this.auth.signUp(this.username.value, this.email.value, this.password.value)
+    .subscribe(user => {
+      console.log(user)
+      sessionStorage.setItem('token', user.sessionToken)
+      alert(user.message)
+      window.location.href = '/home'
+    })
   }
 
 }
