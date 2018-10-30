@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome!';
+  token = sessionStorage.getItem('token')
+
+  logout() {
+    sessionStorage.removeItem('token')
+    window.location.reload()
+  }
+
 }

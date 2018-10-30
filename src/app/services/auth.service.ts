@@ -21,25 +21,12 @@ export class AuthService {
       return this.currentUserSubect.value;
    }
 
-  signup(username: string, email: string, password: string){
-    return this.http.post('http://localhost:3000/user/signup', { username: username, email: email, password: password})
+  signUp(username: string, email: string, password: string){
+    return this.http.post<User>('http://localhost:3000/user/createuser', { username: username, email: email, password: password})
   }
 
-  login(username: string, email: string, password: string) {
-    return this.http.post<User>('http://localhost:3000/user/signin', { username: username, email: email, password: password })
-    .pipe(map(user => {
-      if(user && user.token){
-        sessionStorage.setItem('currentUser', JSON.stringify(user.token))
-      }
-
-      return user;
-    }))
-  }
-
-  logout() {
-    //remove user fromm local storage to log user out
-    localStorage.removeItem('currentUser');
-    this.currentUserSubect.next(null);
+  login(username: string, password: string) {
+    return this.http.post<User>('http://localhost:3000/user/signin', { username: username, password: password })
   }
 
 }

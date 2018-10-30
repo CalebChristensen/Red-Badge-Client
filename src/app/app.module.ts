@@ -13,6 +13,7 @@ import { AlertComponent } from './alert/alert.component';
 
 import { MaterialModule } from './material/material.module';
 import { FormspreeComponent } from './formspree/formspree.component';
+import { PoiComponent } from './poi/poi.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,8 @@ import { FormspreeComponent } from './formspree/formspree.component';
     LoginComponent,
     AlertComponent,
     FormspreeComponent,
+    PoiComponent,
+
   ],
   imports: [
     BrowserModule,

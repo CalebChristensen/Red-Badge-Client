@@ -1,0 +1,28 @@
+<div *ngIf='poi'>
+  <div *ngFor='let places of poi'>
+    <div class="card">
+      <div class="cardContainer">
+        <h3>{{ places.name }}</h3>
+        <p><i> {{ places.name_suffix }} </i></p>
+        <p>Original Name:<br /> {{ places.original_name }}</p>
+        <p>{{ places.perex }}</p>
+        <img class="poiPicture" src="{{ places.thumbnail_url }}" />
+        <p>Website: <br/><a href="{{ places.url }}">Click For More Information</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div *ngIf='poi'>
+  <div *ngFor='let media of poi'>
+    <div class="card">
+      <div class="cardContainer">
+          <div class="video">
+              <video controls (click)="toggleVideo()" #videoPlayer>
+                  <source src="{{ media.url }}" type="video/mp4" />
+                  Browser not supported
+              </video>
+          </div>
+      </div>
+    </div>
+  </div>
+</div> -->
