@@ -15,10 +15,10 @@ export class PoiComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // return this.poiService.getPoi().subscribe(data => {
-    //   this.poi = data.data.places
-    //   console.log(this.poi)
-    // })
+    return this.poiService.getPoi().subscribe(data => {
+      this.poi = data.data.places
+      console.log(this.poi)
+    })
 
     // return this.poiService.getMedia().subscribe(data => {
     //   this.array.push(data.data.media)
