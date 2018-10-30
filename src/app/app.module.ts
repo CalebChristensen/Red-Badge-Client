@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { AlertComponent } from './alert/alert.component';
 
 import { MaterialModule } from './material/material.module';
+import { FormspreeComponent } from './formspree/formspree.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MaterialModule } from './material/material.module';
     SignupComponent,
     LoginComponent,
     AlertComponent,
+    FormspreeComponent,
   ],
   imports: [
     BrowserModule,
