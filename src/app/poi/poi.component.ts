@@ -16,7 +16,7 @@ export class PoiComponent implements OnInit {
 
   ngOnInit() {
     return this.poiService.getPoi().subscribe(data => {
-      this.poi = data.data.places
+      this.poi = data
       console.log(this.poi)
     })
 

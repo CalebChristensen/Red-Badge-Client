@@ -1,5 +1,5 @@
 <div *ngIf='poi'>
-  <div *ngFor='let places of poi'>
+  <div *ngFor='let places of poi.data.places'>
     <div class="card">
       <div class="cardContainer">
         <h3>{{ places.name }}</h3>
