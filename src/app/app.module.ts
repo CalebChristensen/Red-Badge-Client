@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { AlertComponent } from './alert/alert.component';
 
 import { MaterialModule } from './material/material.module';
+import { PoiComponent } from './poi/poi.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MaterialModule } from './material/material.module';
     SignupComponent,
     LoginComponent,
     AlertComponent,
+    PoiComponent,
   ],
   imports: [
     BrowserModule,
