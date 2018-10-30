@@ -14,7 +14,7 @@ import {
   MatDialogModule,
   MatInputModule,
   MatTableModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
 } from '@angular/material';
 
 @NgModule({
