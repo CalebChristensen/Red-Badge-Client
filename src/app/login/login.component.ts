@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     .subscribe(user => {
       console.log(user)
       sessionStorage.setItem('token', user.sessionToken)
-      alert(`Welcome ${user.user.username}!`)
+      alert(user.message)
       window.location.href = '/home'
     })
   }
