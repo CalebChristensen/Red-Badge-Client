@@ -1,16 +1,16 @@
 .auth-container > * { 
   margin-top: 5em;
   padding: 2em;
-  border: 1px solid #e5e5e5;
-  border-radius: 0.4em;
-  box-shadow: 2px 4px 20px #f0f0f0;
+  border-radius: 1em;
   width: 30%;
 }
 
-.example-card > * {
+.example-card {
   text-align: center;
+  margin: 10px auto;
+  background-color: salmon;
 }
 
-input > * {
+.header {
   justify-content: center;
 }

@@ -1,7 +1,7 @@
-<div *ngIf='poi'>
-  <div *ngFor='let places of poi.data.places'>
-    <div class="card">
-      <div class="cardContainer">
+<div *ngIf='poi' >
+  <div *ngFor='let places of poi.data.places' >
+    <div class="card animated fadeInUp slower"  >
+      <div class="cardContainer" >
         <h3>{{ places.name }}</h3>
         <p><i> {{ places.name_suffix }} </i></p>
         <p>Original Name:<br /> {{ places.original_name }}</p>
@@ -12,15 +12,16 @@
     </div>
   </div>
 </div>
-<!-- <div *ngIf='poi'>
-  <div *ngFor='let media of poi'>
+<!-- <div *ngIf='array'>
+  <div *ngFor='let video of array'>
     <div class="card">
       <div class="cardContainer">
           <div class="video">
               <video controls (click)="toggleVideo()" #videoPlayer>
-                  <source src="{{ media.url }}" type="video/mp4" />
+                  <source src="{{ video.url }}" type="video/mp4" />
                   Browser not supported
               </video>
+              <img src="{{video.attribution}}">
           </div>
       </div>
     </div>

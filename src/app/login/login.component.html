@@ -1,21 +1,32 @@
 <div class="auth-container">
-  <div class="form">
+    <mat-card class="example-card" fxLayoutAlign="center center">
+        <mat-card-content>
+            <mat-card-header fxLayoutAlign="center center">
+                <mat-card-title class="header">Log In</mat-card-title>
+              </mat-card-header>
     <form (ngSubmit)="login()">
-      <h3>Login</h3>
-      <div>
-        <label for="username">Username:</label>
-        <br />
-        <input type="text" id="username" [formControl]="username" class="form-control" placeholder="Enter username" />
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <br />
-        <input type="password" id="password" [formControl]="password" class="form-control" placeholder="Password" />
-      </div>
-      <br />
-      <button type="submit" class="btn1">Login</button>
+        <table cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field>
+
+        <input matInput placeholder="Username" type="text" id="username" [formControl]="username" class="form-control"  />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field>
+        <input matInput placeholder="Password" type="password" id="password" [formControl]="password" class="form-control" />
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+      <button mat-raised-button type="submit" class="btn1">Login</button>
       <br /><br />
       <a routerLink="/signup">Don't have an account yet?</a>
     </form>
-  </div>
+    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+  </mat-card-content>
+</mat-card>
 </div>
