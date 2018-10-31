@@ -32,4 +32,10 @@ export class PoiService {
       headers: new HttpHeaders().set('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO') 
     })
   }
+
+  getTrips() {
+    return this.http.get(`https://api.sygictraveldata.com/1.1/en/trips/templates?parent_place_id=city:5`, {
+      headers: new HttpHeaders().set('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO')
+    })
+  }
 }

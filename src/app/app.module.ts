@@ -15,6 +15,7 @@ import { MaterialModule } from './material/material.module';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { PoiComponent } from './poi/poi.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { TripsComponent } from './trips/trips.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
     FormspreeComponent,
     PoiComponent,
     RestaurantsComponent,
+    TripsComponent,
 
   ],
   imports: [
