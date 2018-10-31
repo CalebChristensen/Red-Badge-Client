@@ -1,10 +1,11 @@
 <div>
-  <mat-card>
+  <mat-card class="navbar">
     <button mat-raised-button routerLink="/">Home</button>
     <button mat-raised-button routerLink="/poi">Search</button>
     <button mat-raised-button routerLink="/restaurants">Top Restaurants</button>
     <button mat-raised-button routerLink="/trips">Trips</button>
     <button mat-raised-button routerLink="/login" *ngIf='!token'>Log In</button>
+    <button mat-raised-button routerLink='/account' *ngIf='token'>Account</button>
     <button mat-raised-button (click)='logout()' *ngIf='token'>Logout</button>
   </mat-card>
 </div>

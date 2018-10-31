@@ -9,13 +9,14 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-import { AlertComponent } from './alert/alert.component';
 
 import { MaterialModule } from './material/material.module';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { PoiComponent } from './poi/poi.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { TripsComponent } from './trips/trips.component';
+import { AccountComponent } from './account/account.component';
+
 
 @NgModule({
   declarations: [
@@ -24,11 +25,11 @@ import { TripsComponent } from './trips/trips.component';
     HomeComponent,
     SignupComponent,
     LoginComponent,
-    AlertComponent,
     FormspreeComponent,
     PoiComponent,
     RestaurantsComponent,
     TripsComponent,
+    AccountComponent
 
   ],
   imports: [

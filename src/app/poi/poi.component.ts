@@ -20,12 +20,11 @@ export class PoiComponent implements OnInit {
       console.log(this.poi)
     })
 
-    // return this.poiService.getMedia().subscribe(data => {
-    //   this.array.push(data.data.media)
-    //   console.log(this.array)
-    // })
 
-   
+  //   return this.poiService.getMedia().subscribe(data => {
+  //     this.array.push(data)
+  //     console.log(this.array)
+  //   })
+  // }
   }
-
 }

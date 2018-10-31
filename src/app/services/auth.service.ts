@@ -9,17 +9,8 @@ import { User2 } from '../user2'
   providedIn: 'root'
 })
 export class AuthService {
-  private currentUserSubect: BehaviorSubject<User>;
-  public currentUser: Observable<User>;
 
-  constructor(private http: HttpClient) {
-    this.currentUserSubect = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
-    this.currentUser = this.currentUserSubect.asObservable();
-   }
-
-   public get currentUserValue(): User {
-      return this.currentUserSubect.value;
-   }
+  constructor(private http: HttpClient) {}
 
   signUp(username: string, email: string, password: string){
     return this.http.post<User>('http://localhost:3000/user/createuser', { username: username, email: email, password: password})

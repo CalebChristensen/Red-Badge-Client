@@ -11,7 +11,7 @@ export class AppComponent {
 
   logout() {
     sessionStorage.removeItem('token')
-    window.location.reload()
+    window.location.href = '/home'
   }
 
 }
