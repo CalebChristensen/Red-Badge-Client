@@ -24,6 +24,8 @@ export class PoiComponent implements OnInit {
     //   this.array.push(data.data.media)
     //   console.log(this.array)
     // })
+
+   
   }
 
 }
