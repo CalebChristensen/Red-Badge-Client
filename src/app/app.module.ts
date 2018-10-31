@@ -9,11 +9,11 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-import { AlertComponent } from './alert/alert.component';
 
 import { MaterialModule } from './material/material.module';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { PoiComponent } from './poi/poi.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +22,9 @@ import { PoiComponent } from './poi/poi.component';
     HomeComponent,
     SignupComponent,
     LoginComponent,
-    AlertComponent,
     FormspreeComponent,
     PoiComponent,
-
+    AccountComponent
   ],
   imports: [
     BrowserModule,
