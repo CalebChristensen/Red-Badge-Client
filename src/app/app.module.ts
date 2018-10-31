@@ -13,7 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from './material/material.module';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { PoiComponent } from './poi/poi.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { TripsComponent } from './trips/trips.component';
 import { AccountComponent } from './account/account.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { AccountComponent } from './account/account.component';
     LoginComponent,
     FormspreeComponent,
     PoiComponent,
+    RestaurantsComponent,
+    TripsComponent,
     AccountComponent
+
   ],
   imports: [
     BrowserModule,
