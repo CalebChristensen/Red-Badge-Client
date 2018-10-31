@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/purple-green.css';
+
+html, body {
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Monoton', cursive; */
+  /* font-family: 'Rock Salt', cursive; */
+  /* font-family: 'Spinnaker', sans-serif; */
+  /* font-family: 'Syncopate', sans-serif; */
+  /* font-family: 'Cinzel Decorative', cursive; */
+  /* font-family: 'Federo', sans-serif; */
+}

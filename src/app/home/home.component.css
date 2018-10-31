@@ -4,16 +4,22 @@
   background-size: cover;
   height: 90vh;
   width: 100%;
+  
 }
 
 .logo {
+  font-family: 'Monoton', cursive;
+  
+  color: whitesmoke;
+  border: 5px;
+  font-size: 8vw;
   position: absolute;
-  top: 0px;
+  top: 43%;
   z-index: 1;
-  border-radius: 5%;
-  height:200px;
-  right: 36%;
-  top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .bottomHome {
@@ -22,30 +28,10 @@
 
 .wrapper {
   text-align: center;
+  color:white;
   padding: 5em;
-}
-
-/* .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
   background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.pLeft {
-  grid-column: 1;
-  color:black;
-}
-.iCenter {
-  grid-column: 2;
-  border-radius: 50%;
-  height:400px;
-  width: 100%;
-  border: 1px solid whitesmoke;
-  box-shadow: 2px 4px 20px black;
-}
-.pRight {
-  grid-column: 3;
-  color: black;
-} */
-
