@@ -1,16 +1,32 @@
 .auth-container > * { 
-  margin-top: 5em;
-  padding: 2em;
   border-radius: 1em;
-  width: 30%;
+  width: 40vh;
+  height: 45vh;
+  
 }
-
 .example-card {
+  background-image: url(http://modestasalons.com/wp-content/uploads/2015/01/Dark-Red-Abstract-Desktop-Background-HD-Wallpaper-Desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  width: 100%;
+  top: 20vh;
   text-align: center;
-  margin: 10px auto;
-  background-color: salmon;
 }
-
 .header {
   justify-content: center;
+}
+.jumbo {
+  background-image: url(http://www.wallpapers13.com/wp-content/uploads/2016/01/Beauty-orange-beach-wallpaper-915x515.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange
 }

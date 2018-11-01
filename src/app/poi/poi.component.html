@@ -1,3 +1,18 @@
+<div class="jumbo animated fadeIn slower">
+<form style="text-align: center">
+  <br />
+  <select class="dropDown" [formControl]="countryName" (click)='getCities()'>
+    <option *ngFor="let countries of array[0]" value={{countries.countryIds}}>{{ countries.countryName }}</option>
+  </select>
+  <br /><br />
+  <select *ngIf='cities' [formControl]='cityName'>
+    <option *ngFor="let city of cities[0]" value={{city.cityIds}}>{{ city.cityName }}</option>
+  </select>
+  <br /><br />
+  <!-- <input matInput type="text" [formControl]="cityName" class="searchBar"> -->
+  <button type='submit' (click)='getPoi()'>Search</button>
+</form>
+<br /> <br />
 <div *ngIf='poi' >
   <div *ngFor='let places of poi.data.places' >
     <div class="card animated fadeInUp slower"  >
@@ -11,6 +26,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <!-- <div *ngIf='array'>
   <div *ngFor='let video of array'>

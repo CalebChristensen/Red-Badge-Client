@@ -1,33 +1,36 @@
-<div class="auth-container">
-    <mat-card class="example-card" fxLayoutAlign="center center">
-        <mat-card-content>
-            <mat-card-header fxLayoutAlign="center center">
-                <mat-card-title class="header">Log In</mat-card-title>
-              </mat-card-header>
-    <form (ngSubmit)="login()">
-        <table cellspacing="0">
+<div class="jumbo animated fadeIn slower">
+  <div>
+  <div class="auth-container">
+    <mat-card class="example-card animated fadeIn slower" fxLayoutAlign="center center">
+      <mat-card-content>
+        <mat-card-header fxLayoutAlign="center center">
+          <mat-card-title class="header">Log In</mat-card-title>
+        </mat-card-header>
+        <form (ngSubmit)="login()">
+          <table cellspacing="0">
             <tr>
               <td>
                 <mat-form-field>
-
-        <input matInput placeholder="Username" type="text" id="username" [formControl]="username" class="form-control"  />
-      </mat-form-field>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <mat-form-field>
-        <input matInput placeholder="Password" type="password" id="password" [formControl]="password" class="form-control" />
-      </mat-form-field>
-    </td>
-  </tr>
-</table>
-      <button mat-raised-button type="submit" class="btn1">Login</button>
-      <br /><br />
-      <a routerLink="/signup">Don't have an account yet?</a>
-    </form>
-    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
-  </mat-card-content>
-</mat-card>
+                  <input matInput placeholder="Username" type="text" id="username" [formControl]="username" class="form-control" />
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field>
+                  <input matInput placeholder="Password" type="password" id="password" [formControl]="password" class="form-control" />
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+          <br />
+          <button mat-raised-button type="submit" class="btn1">Login</button>
+          <br /><br /><br />
+          <a routerLink="/signup" style="color: whitesmoke">Don't have an account yet?</a>
+        </form>
+        <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>
-
+</div>

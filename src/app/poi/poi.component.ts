@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
 import { PoiService } from '../services/poi.service';
+import { getPreviousOrParentTNode } from '@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-poi',
@@ -7,24 +9,40 @@ import { PoiService } from '../services/poi.service';
   styleUrls: ['./poi.component.css']
 })
 export class PoiComponent implements OnInit {
+  myForm: FormGroup
   poi: Object
   array = []
+  countryName= new FormControl("")
+  cityName = new FormControl("")
+  cities = []
 
   constructor(
+    private fb: FormBuilder,
     private poiService: PoiService,
   ) { }
 
   ngOnInit() {
-    return this.poiService.getPoi().subscribe(data => {
-      this.poi = data
-      console.log(this.poi)
+    // return this.poiService.getPoi().subscribe(data => {
+    //   this.poi = data
+    //   console.log(this.poi)
+    // })
+    return this.poiService.getCountries().subscribe(data => {
+      
+      this.array.push(data)
+      console.log(this.array[0])
     })
 
-
-  //   return this.poiService.getMedia().subscribe(data => {
-  //     this.array.push(data)
-  //     console.log(this.array)
-  //   })
-  // }
+  }
+  
+  getCities() {
+    return this.poiService.getCities(this.countryName.value).subscribe(data => {
+      this.cities.splice(0, 1, data)
+    })
+  }
+      
+  getPoi(e): void {
+    this.poiService.getPoi(this.cityName.value).subscribe(data => {
+      this.poi = data
+    })
   }
 }
