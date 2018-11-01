@@ -16,6 +16,8 @@ import { PoiComponent } from './poi/poi.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { TripsComponent } from './trips/trips.component';
 import { AccountComponent } from './account/account.component';
+import { UpdAccModalComponent } from './modals/upd-acc-modal/upd-acc-modal.component';
+import { DelAccModalComponent } from './modals/del-acc-modal/del-acc-modal.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { AccountComponent } from './account/account.component';
     PoiComponent,
     RestaurantsComponent,
     TripsComponent,
-    AccountComponent
+    AccountComponent,
+    UpdAccModalComponent,
+    DelAccModalComponent
 
   ],
   imports: [
@@ -41,6 +45,7 @@ import { AccountComponent } from './account/account.component';
     MaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [UpdAccModalComponent, DelAccModalComponent]
 })
 export class AppModule { }

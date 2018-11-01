@@ -8,6 +8,7 @@ import { PoiComponent } from './poi/poi.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { TripsComponent } from './trips/trips.component';
 import { AccountComponent } from './account/account.component';
+import { FormspreeComponent } from './formspree/formspree.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: 'poi', component: PoiComponent},
   {path: 'restaurants', component: RestaurantsComponent},
   {path: 'trips', component: TripsComponent},
-  {path: 'account', component: AccountComponent}
+  {path: 'account', component: AccountComponent},
+  {path: 'formspree', component: FormspreeComponent}
 ];
 
 @NgModule({

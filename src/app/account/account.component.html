@@ -7,5 +7,10 @@
   <li>Email: {{userData.email}}</li>
 </ul>
 
-<button>Update Account Information</button>
-<button>Delete Account</button>
+<button mat-raised-button (click)='openUpdateDialog()'>Update Account Information</button>
+<br>
+<button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
+
+<div class='admin' fxLayoutAlign="center">
+  <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the site by other users. If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to become an Admin.</p>
+</div>
