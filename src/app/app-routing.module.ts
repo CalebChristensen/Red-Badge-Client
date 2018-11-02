@@ -9,6 +9,7 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { TripsComponent } from './trips/trips.component';
 import { AccountComponent } from './account/account.component';
 import { FormspreeComponent } from './formspree/formspree.component';
+import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
