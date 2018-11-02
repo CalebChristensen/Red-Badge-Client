@@ -10,13 +10,13 @@ import { getPreviousOrParentTNode } from '@angular/core/src/render3/instructions
 })
 export class PoiComponent implements OnInit {
   myForm: FormGroup
-  poi: Object
-  array: any
   countryName = new FormControl("")
   cityName = new FormControl("")
+  array: any
   cities: any
-  restaurants: Object
-  trips: Object
+  poi: any
+  restaurants: any
+  trips: any
 
 
   constructor(
@@ -27,7 +27,6 @@ export class PoiComponent implements OnInit {
   ngOnInit() {
     return this.poiService.getCountries().subscribe(data => {
       this.array = data
-      console.log(this.array)
     })
 
   }
@@ -41,16 +40,22 @@ export class PoiComponent implements OnInit {
   getPoi(e): void {
     this.poiService.getPoi(this.cityName.value).subscribe(data => {
       this.poi = data
+      this.restaurants = ''
+      this.trips = ''
     })
   }
   getRestaurants(e): void {
     this.poiService.getRestaurants(this.cityName.value).subscribe(data => {
       this.restaurants = data
+      this.poi = ''
+      this.trips = ''
     })
   }
     getTrips(e): void {
     this.poiService.getTrips(this.cityName.value).subscribe(data => {
     this.trips = data
+    this.poi = ''
+    this.restaurants = ''
   })
 }
 
