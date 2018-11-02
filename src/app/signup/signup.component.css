@@ -1,9 +1,3 @@
-.auth-container > * { 
-  border-radius: 1em;
-  width: 40vh;
-  height: 45vh;
-  
-}
 .example-card {
   background-image: url(../../assets/example-card.jpg);
   background-repeat: no-repeat;
@@ -29,4 +23,56 @@ button {
   border: 1px solid black;
   margin: 5px;
   background-color: darkorange
+}
+
+/* Desktop PC & Responsive */
+.auth-container > * { 
+  border-radius: 1em;
+  width: 40vh;
+  height: 48vh;
+}
+
+/* Ipad Pro COMPLETE */
+@media screen and (max-width: 1024px) {
+  .auth-container > * { 
+    border-radius: 1em;
+    width: 35vh;
+    height: 30vh;
+  }
+}
+
+/* Ipad COMPLETE */
+@media screen and (max-width: 769px) {
+  .auth-container > * { 
+    border-radius: 1em;
+    width: 40vh;
+    height: 37vh;
+  }
+}
+
+/* Iphone 6/7/8 Plus COMPLETE */
+@media screen and (max-width: 414px) {
+  .auth-container > * { 
+    border-radius: 1em;
+    width: 40vh;
+    height: 45vh;
+  }
+}
+
+/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 412px) {
+  .auth-container > * { 
+    border-radius: 1em;
+    width: 40vh;
+    height: 46vh;
+  }
+}
+
+/* Iphone 5/SE & Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .auth-container > * { 
+    border-radius: 1em;
+    width: 40vh;
+    height: 55vh;
+  }
 }
