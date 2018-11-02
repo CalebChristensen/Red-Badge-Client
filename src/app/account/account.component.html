@@ -1,16 +1,24 @@
-<h1>{{userData.username}}'s Account</h1>
+<h1 class='title'>{{userData.username}}'s Account</h1>
 
-<h4>Account Info</h4>
+<div class='accountInfo'>
 
-<ul>
-  <li>Username: {{userData.username}}</li>
-  <li>Email: {{userData.email}}</li>
-</ul>
+  <h3>Account Info</h3>
 
-<button mat-raised-button (click)='openUpdateDialog()'>Update Account Information</button>
-<br>
-<button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
+  <ul>
+    <li>Username: {{userData.username}}</li>
+    <li>Email: {{userData.email}}</li>
+  </ul>
 
-<div class='admin' fxLayoutAlign="center">
-  <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the site by other users. If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to become an Admin.</p>
+  <button mat-raised-button (click)='openUpdateDialog()'>Update Account Information</button>
+  <br>
+  <button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
+  
+  <div fxLayoutAlign="center">
+    <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the site by other users. If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to become an Admin.</p>
+  </div>
+
+</div>
+
+<div class='saved'>
+  <h3>Saved Destinations</h3>
 </div>
