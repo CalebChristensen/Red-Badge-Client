@@ -2,3 +2,15 @@ p {
     position: fixed;
     bottom: 4%
 }
+
+.title {
+    text-align: center
+}
+
+.accountInfo {
+    float: left
+}
+
+.saved {
+    float: right;
+}
