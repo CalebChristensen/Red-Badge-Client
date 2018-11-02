@@ -1,5 +1,5 @@
 .card {
-  background-image: url(http://modestasalons.com/wp-content/uploads/2015/01/Dark-Red-Abstract-Desktop-Background-HD-Wallpaper-Desktop.jpg);
+  background-image: url(../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -22,13 +22,13 @@
 }
 
 .jumbo {
-  background-image: url(https://images7.alphacoders.com/399/thumb-1920-399085.jpg);
+  background-image: url(../../assets/poi-jumbo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
 }
 .card2 {
-  background-image: url(http://modestasalons.com/wp-content/uploads/2015/01/Dark-Red-Abstract-Desktop-Background-HD-Wallpaper-Desktop.jpg);
+  background-image: url(../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
