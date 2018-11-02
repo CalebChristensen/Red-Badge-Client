@@ -14,8 +14,6 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from './material/material.module';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { PoiComponent } from './poi/poi.component';
-import { RestaurantsComponent } from './restaurants/restaurants.component';
-import { TripsComponent } from './trips/trips.component';
 import { AccountComponent } from './account/account.component';
 import { UpdAccModalComponent } from './modals/upd-acc-modal/upd-acc-modal.component';
 import { DelAccModalComponent } from './modals/del-acc-modal/del-acc-modal.component';
@@ -30,8 +28,6 @@ import { DelAccModalComponent } from './modals/del-acc-modal/del-acc-modal.compo
     LoginComponent,
     FormspreeComponent,
     PoiComponent,
-    RestaurantsComponent,
-    TripsComponent,
     AccountComponent,
     UpdAccModalComponent,
     DelAccModalComponent
