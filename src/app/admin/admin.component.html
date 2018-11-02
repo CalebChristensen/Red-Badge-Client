@@ -1,0 +1,10 @@
+<div *ngIf='results'>
+  <div *ngFor='let user of results'>
+    <h1>User ID: {{user.id}}</h1>
+    <p>Username: {{user.username}}</p>
+    <p>Email: {{user.email}}</p>
+    <button mat-raised-button (click)='openUpdateDialog(user.id)'>Update Account Information</button>
+    <button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
+    <br><br><br><br>
+  </div>
+</div>

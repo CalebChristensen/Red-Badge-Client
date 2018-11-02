@@ -9,14 +9,14 @@
     <li>Email: {{userData.email}}</li>
   </ul>
 
-  <button mat-raised-button (click)='openUpdateDialog()'>Update Account Information</button>
+  <button mat-raised-button (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
   <br>
   <button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
   
-  <div fxLayoutAlign="center">
+  <div fxLayoutAlign="center center">
     <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the site by other users. If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to become an Admin.</p>
   </div>
-
+  
 </div>
 
 <div class='saved'>

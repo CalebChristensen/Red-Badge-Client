@@ -8,6 +8,7 @@ import { PoiComponent } from './poi/poi.component';
 import { AccountComponent } from './account/account.component';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { AuthGuard } from './services/auth.guard';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'poi', component: PoiComponent},
   {path: 'account', component: AccountComponent},
-  {path: 'formspree', component: FormspreeComponent}
+  {path: 'formspree', component: FormspreeComponent},
+  {path: 'admin', component: AdminComponent}
 ];
 
 @NgModule({

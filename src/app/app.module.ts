@@ -17,6 +17,7 @@ import { PoiComponent } from './poi/poi.component';
 import { AccountComponent } from './account/account.component';
 import { UpdAccModalComponent } from './modals/upd-acc-modal/upd-acc-modal.component';
 import { DelAccModalComponent } from './modals/del-acc-modal/del-acc-modal.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { DelAccModalComponent } from './modals/del-acc-modal/del-acc-modal.compo
     PoiComponent,
     AccountComponent,
     UpdAccModalComponent,
-    DelAccModalComponent
+    DelAccModalComponent,
+    AdminComponent
 
   ],
   imports: [

@@ -8,9 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Welcome!';
   token = sessionStorage.getItem('token')
+  admin = () => {
+    let admin = sessionStorage.getItem('admin')
+    if (admin === 'true') {
+      return true
+    } else {
+      return false
+    }
+  }
 
   logout() {
-    sessionStorage.removeItem('token')
+    sessionStorage.clear()
     window.location.href = '/home'
   }
 

@@ -26,17 +26,21 @@ export class AuthService {
     return this.http.post<User2>('http://localhost:3000/user/signin', { username: username, password: password })
   }
 
-  update(username: string, email: string, password: string) {
+  update(username: string, email: string, password: string, id) {
     const user = {
       username: username,
       email: email,
       passwordhash: password
     }
-    return this.http.put('http://localhost:3000/user/update', user, httpOptions)
+    return this.http.put(`http://localhost:3000/user/update/${id}`, user, httpOptions)
   }
 
   delete() {
     return this.http.delete('http://localhost:3000/user/delete', httpOptions)
+  }
+
+  getUsers() {
+    return this.http.get('http://localhost:3000/user/allUsers', httpOptions)
   }
 
 }

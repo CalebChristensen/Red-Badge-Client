@@ -14,6 +14,7 @@ export class UpdAccModalComponent implements OnInit {
   username = new FormControl()
   email = new FormControl()
   password = new FormControl()
+  id = sessionStorage.getItem('userId')
 
   constructor(
     private auth: AuthService, 
@@ -24,7 +25,7 @@ export class UpdAccModalComponent implements OnInit {
   }
 
   update() {
-    this.auth.update(this.username.value, this.email.value, this.password.value)
+    this.auth.update(this.username.value, this.email.value, this.password.value, this.id)
     .subscribe()
     this.dialog.close()
     window.location.reload()
