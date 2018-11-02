@@ -1,7 +1,7 @@
 <div class="jumbo animated fadeIn slower">
 <form style="text-align: center">
   <br />
-  <select class="dropDown" [formControl]="countryName" (click)='getCities()'>
+  <select  class="dropDown" [formControl]="countryName" (click)='getCities()'>
     <option *ngFor="let countries of array[0]" value={{countries.countryIds}}>{{ countries.countryName }}</option>
   </select>
   <br /><br />
@@ -10,7 +10,9 @@
   </select>
   <br /><br />
   <!-- <input matInput type="text" [formControl]="cityName" class="searchBar"> -->
-  <button type='submit' (click)='getPoi()'>Search</button>
+  <button mat-raised-button type='submit' (click)='getPoi()'>Points Of Interest</button>
+  <button mat-raised-button type='submit' (click)='getRestaurants()'>Top Restaurants</button>
+  <button mat-raised-button type='submit' (click)='getTrips()'>Book a Trip</button>
 </form>
 <br /> <br />
 <div *ngIf='poi' >
@@ -27,20 +29,29 @@
     </div>
   </div>
 </div>
-</div>
-<!-- <div *ngIf='array'>
-  <div *ngFor='let video of array'>
-    <div class="card">
-      <div class="cardContainer">
-          <div class="video">
-              <video controls (click)="toggleVideo()" #videoPlayer>
-                  <source src="{{ video.url }}" type="video/mp4" />
-                  Browser not supported
-              </video>
-              <img src="{{video.attribution}}">
-          </div>
+<div *ngIf='restaurants'>
+    <div *ngFor='let restaurant of restaurants.data.places'>
+      <div class='card animated fadeInUp slower'>
+        <div class='cardContainer'>
+          <h3>{{ restaurant.name }}</h3>
+          <p><i>{{ restaurant.name_suffix }}</i></p>
+          <p>Original Name: <br/> {{ restaurant.original_name }}</p>
+          <p>{{ restaurant.perex }}</p>
+          <img class="poiPicture" src="{{ restaurant.thumbnail_url }}"/>
+          <p>Website: <br/><a href="{{ restaurant.url }}">Click for More Information</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div> -->
-
+  <div *ngIf='trips'>
+      <div *ngFor='let trip of trips.data.trips'>
+        <div class='card2 animated fadeInUp slower'>
+          <div class='cardContainer'>
+            <h3>{{ trip.name }}</h3>
+            <p>Dates: {{ trip.starts_on }} - {{ trip.ends_on }}</p>
+            <p>Day Count: {{ trip.day_count }}</p>
+            <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>

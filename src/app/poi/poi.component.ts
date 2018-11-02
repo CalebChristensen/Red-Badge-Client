@@ -12,9 +12,12 @@ export class PoiComponent implements OnInit {
   myForm: FormGroup
   poi: Object
   array = []
-  countryName= new FormControl("")
+  countryName = new FormControl("")
   cityName = new FormControl("")
   cities = []
+  restaurants: Object
+  trips: Object
+
 
   constructor(
     private fb: FormBuilder,
@@ -22,27 +25,33 @@ export class PoiComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // return this.poiService.getPoi().subscribe(data => {
-    //   this.poi = data
-    //   console.log(this.poi)
-    // })
     return this.poiService.getCountries().subscribe(data => {
-      
       this.array.push(data)
       console.log(this.array[0])
     })
 
   }
-  
+
   getCities() {
     return this.poiService.getCities(this.countryName.value).subscribe(data => {
       this.cities.splice(0, 1, data)
     })
   }
-      
+
   getPoi(e): void {
     this.poiService.getPoi(this.cityName.value).subscribe(data => {
       this.poi = data
     })
   }
+  getRestaurants(e): void {
+    this.poiService.getRestaurants(this.cityName.value).subscribe(data => {
+      this.restaurants = data
+    })
+  }
+    getTrips(e): void {
+    this.poiService.getTrips(this.cityName.value).subscribe(data => {
+    this.trips = data
+  })
+}
+
 }
