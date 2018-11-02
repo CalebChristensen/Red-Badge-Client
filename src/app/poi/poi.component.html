@@ -2,11 +2,13 @@
 <form style="text-align: center">
   <br />
   <select  class="dropDown" [formControl]="countryName" (click)='getCities()'>
-    <option *ngFor="let countries of array[0]" value={{countries.countryIds}}>{{ countries.countryName }}</option>
+    <option disabled selected value>-- Select a Country --</option>
+    <option *ngFor="let countries of array" value={{countries.countryIds}}>{{ countries.countryName }}</option>
   </select>
   <br /><br />
   <select *ngIf='cities' [formControl]='cityName'>
-    <option *ngFor="let city of cities[0]" value={{city.cityIds}}>{{ city.cityName }}</option>
+    <option disabled selected value>-- Select a City --</option>
+    <option *ngFor="let city of cities" value={{city.cityIds}}>{{ city.cityName }}</option>
   </select>
   <br /><br />
   <!-- <input matInput type="text" [formControl]="cityName" class="searchBar"> -->
