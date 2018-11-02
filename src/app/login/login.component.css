@@ -5,7 +5,7 @@
   
 }
 .example-card {
-  background-image: url(http://modestasalons.com/wp-content/uploads/2015/01/Dark-Red-Abstract-Desktop-Background-HD-Wallpaper-Desktop.jpg);
+  background-image: url(../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -17,7 +17,7 @@
   justify-content: center;
 }
 .jumbo {
-  background-image: url(http://www.wallpapers13.com/wp-content/uploads/2016/01/Beauty-orange-beach-wallpaper-915x515.jpg);
+  background-image: url(../../assets/jumbo-login.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
