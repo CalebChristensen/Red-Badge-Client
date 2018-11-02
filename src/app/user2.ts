@@ -4,5 +4,5 @@ export class User2 {
   email: string
   passwordhash: string
   message: string
-  sessionToken: string;
+  sessionToken: string
 }
