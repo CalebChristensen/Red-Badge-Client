@@ -1,7 +1,8 @@
 button {
     border: 1px solid black;
     margin: 5px;
-    background-color: darkorange
+    background-color: darkorange;
+
 }
 
 .navbar {
@@ -11,4 +12,8 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   
+}
+
+.mat-icon {
+  width: 100%;
 }

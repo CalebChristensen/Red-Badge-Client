@@ -1,13 +1,13 @@
 <div>
-  <mat-card class="navbar">
+  <mat-toolbar class="navbar">
     <button mat-raised-button routerLink="/">Home</button>
     <button mat-raised-button routerLink="/poi">Search</button>
     <button mat-raised-button routerLink="/login" *ngIf='!token'>Log In</button>
     <button mat-raised-button routerLink='/account' *ngIf='token'>Account</button>
     <button mat-raised-button routerLink='/admin' *ngIf='admin()'>Admin</button>
     <button mat-raised-button (click)='logout()' *ngIf='token'>Logout</button>
-  </mat-card>
+  </mat-toolbar>
 </div>
 
-<router-outlet></router-outlet>
 
+<router-outlet></router-outlet>
