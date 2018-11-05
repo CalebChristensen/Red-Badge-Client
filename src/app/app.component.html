@@ -1,12 +1,12 @@
 <div>
-  <mat-toolbar class="navbar">
-    <button mat-raised-button routerLink="/">Home</button>
-    <button mat-raised-button routerLink="/poi">Search</button>
-    <button mat-raised-button routerLink="/login" *ngIf='!token'>Log In</button>
-    <button mat-raised-button routerLink='/account' *ngIf='token'>Account</button>
+  <mat-card class="navbar">
+    <button mat-raised-button routerLink="/"><i class="fas fa-home"></i></button>
+    <button mat-raised-button routerLink="/poi"><i class="fas fa-search"></i></button>
+    <button mat-raised-button routerLink="/login" *ngIf='!token' ><i class="fas fa-sign-in-alt"></i></button>
+    <button mat-raised-button routerLink='/account' *ngIf='token' ><i class="fas fa-user-alt"></i></button>
     <button mat-raised-button routerLink='/admin' *ngIf='admin()'>Admin</button>
-    <button mat-raised-button (click)='logout()' *ngIf='token'>Logout</button>
-  </mat-toolbar>
+    <button mat-raised-button (click)='logout()' *ngIf='token' ><i class="fas fa-power-off"></i></button>
+  </mat-card>
 </div>
 
 
