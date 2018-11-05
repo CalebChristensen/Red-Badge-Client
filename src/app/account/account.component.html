@@ -1,24 +1,49 @@
+<div class="animated fadeIn slower">
 <h1 class='title'>{{userData.username}}'s Account</h1>
-
+<!-- Account info on the Left -->
+<div class="wrapper" style="text-align:center;text-align: justify; padding:50px 20px;">
+<div class='accountContainerL'>
 <div class='accountInfo'>
-
   <h3>Account Info</h3>
-
   <ul>
     <li>Username: {{userData.username}}</li>
     <li>Email: {{userData.email}}</li>
   </ul>
-
-  <button mat-raised-button (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
+  <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
   <br>
-  <button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
-  
-  <div fxLayoutAlign="center center">
-    <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the site by other users. If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to become an Admin.</p>
-  </div>
-  
+  <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
 </div>
-
+</div>
+<!-- Saved Destinations on the Right -->
+<div class='accountContainerC' fxLayoutAlign="center center">
 <div class='saved'>
   <h3>Saved Destinations</h3>
+  <ul>
+      <li>Username: {{userData.username}}</li>
+      <li>Email: {{userData.email}}</li>
+    </ul>
+    <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Submit Current Activity</button>
+    <br>
+    <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Activity</button>
+</div>
+</div>
+<div class='accountContainerR' >
+    <div class='saved2'>
+      <h3>Completed Destinations</h3>
+      <ul>
+          <li>Username: {{userData.username}}</li>
+          <li>Email: {{userData.email}}</li>
+        </ul>
+        <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Completed Event</button>
+        <br>
+        <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Event</button>
+    </div>
+    </div>
+</div>
+<!-- Admin Footer -->
+<div class="admin" style="text-align: center" fxLayoutAlign="center center">
+  <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the
+    site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to
+    become an Admin.</p>
+</div>
 </div>
