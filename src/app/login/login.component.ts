@@ -20,6 +20,8 @@ export class LoginComponent implements OnInit {
   login() {
     this.auth.login(this.username.value, this.password.value)
     .subscribe(user => {
+      console.log(user)
+      console.log(user.user)
       sessionStorage.setItem('token', user.sessionToken)
       sessionStorage.setItem('admin', user.user.admin)
       alert(user.message)
