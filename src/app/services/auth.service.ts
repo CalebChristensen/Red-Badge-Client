@@ -23,7 +23,7 @@ export class AuthService {
   }
 
   login(username: string, password: string) {
-    return this.http.post<User2>('http://localhost:3000/user/signin', { username: username, password: password })
+    return this.http.post<User>('http://localhost:3000/user/signin', { username: username, password: password })
   }
 
   update(username: string, email: string, password: string, id) {
@@ -37,6 +37,10 @@ export class AuthService {
 
   delete() {
     return this.http.delete('http://localhost:3000/user/delete', httpOptions)
+  }
+
+  delete2(id) {
+    return this.http.delete(`http://localhost:3000/user/adminDelete/${id}`, httpOptions)
   }
 
   getUsers() {
