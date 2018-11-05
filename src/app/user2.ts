@@ -3,6 +3,5 @@ export class User2 {
   username: string
   email: string
   passwordhash: string
-  message: string
-  sessionToken: string
+  admin: string
 }

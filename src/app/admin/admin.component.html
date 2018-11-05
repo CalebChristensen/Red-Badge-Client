@@ -4,7 +4,7 @@
     <p>Username: {{user.username}}</p>
     <p>Email: {{user.email}}</p>
     <button mat-raised-button (click)='openUpdateDialog(user.id)'>Update Account Information</button>
-    <button mat-raised-button (click)='openDeleteDialog()'>Delete Account</button>
+    <button mat-raised-button (click)='openDeleteDialog(user.id)'>Delete Account</button>
     <br><br><br><br>
   </div>
 </div>
