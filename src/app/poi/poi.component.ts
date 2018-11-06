@@ -56,4 +56,8 @@ export class PoiComponent implements OnInit {
   })
 }
 
+    addPoi(name: string, name_suffix: string) {
+      this.poiService.addPoi(name, name_suffix).subscribe()
+    }
+
 }
