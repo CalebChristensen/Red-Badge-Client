@@ -1,7 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http, Headers, RequestOptions } from '@angular/http';
+import { Poi } from '../poi'
 
+let token = sessionStorage.getItem('token')
+
+const httpOptions = {
+  headers: new HttpHeaders({'Authorization': token})
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -45,5 +51,9 @@ export class PoiService {
 
   getCities(id) {
     return this.http.get(`http://localhost:3000/id/getallcities/${id}`)
+  }
+
+  addPoi(name: string, name_suffix: string) {
+    return this.http.post<Poi>(`http://localhost:3000/bucketpoi/create`, {name: name, name_suffix: name_suffix}, httpOptions)
   }
 }

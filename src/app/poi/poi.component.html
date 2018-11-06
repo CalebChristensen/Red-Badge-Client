@@ -27,6 +27,8 @@
           <p>{{ places.perex }}</p>
           <img class="poiPicture" src="{{ places.thumbnail_url }}" />
           <p>Website: <br /><a href="{{ places.url }}">Click For More Information</a> </p>
+          <button mat-raised-button type='submit' (click)='addPoi(places.name, places.name_suffix)'>Add To Bucketlist</button>
+          <br />
         </div>
       </div>
     </div>
@@ -41,6 +43,8 @@
           <p>{{ restaurant.perex }}</p>
           <img class="poiPicture" src="{{ restaurant.thumbnail_url }}" />
           <p>Website: <br /><a href="{{ restaurant.url }}">Click for More Information</a></p>
+          <button mat-raised-button type='submit'>Add To Bucketlist</button>
+          <br />
         </div>
       </div>
     </div>
@@ -53,6 +57,8 @@
           <p>Dates: {{ trip.starts_on }} - {{ trip.ends_on }}</p>
           <p>Day Count: {{ trip.day_count }}</p>
           <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
+          <button mat-raised-button type='submit'>Add To Bucketlist</button>
+          <br />
         </div>
       </div>
     </div>
