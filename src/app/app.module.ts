@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
@@ -24,7 +23,6 @@ import { AdminDelModalComponent } from './modals/admin-del-modal/admin-del-modal
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     HomeComponent,
     SignupComponent,
     LoginComponent,
