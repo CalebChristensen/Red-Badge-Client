@@ -19,12 +19,17 @@ export class SignupComponent implements OnInit {
   }
 
   signUp() {
+    if (this.password.value.length >= 5 && this.password.value.length <= 20) {
     this.auth.signUp(this.username.value, this.email.value, this.password.value)
     .subscribe(user => {
       sessionStorage.setItem('token', user.sessionToken)
       alert(user.message)
       window.location.href = '/home'
-    })
+    },
+    err => console.log(err))
+  } else {
+    alert('Password must be between 5 and 20 characters!')
   }
+}
 
 }
