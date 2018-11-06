@@ -1,49 +1,104 @@
 <div class="animated fadeIn slower">
-<h1 class='title'>{{userData.username}}'s Account</h1>
-<!-- Account info on the Left -->
-<div class="wrapper" style="text-align:center;text-align: justify; padding:50px 20px;">
-<div class='accountContainerL'>
-<div class='accountInfo'>
-  <h3>Account Info</h3>
-  <ul>
-    <li>Username: {{userData.username}}</li>
-    <li>Email: {{userData.email}}</li>
-  </ul>
-  <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
-  <br>
-  <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
-</div>
-</div>
-<!-- Saved Destinations on the Right -->
-<div class='accountContainerC' fxLayoutAlign="center center">
-<div class='saved'>
-  <h3>Saved Destinations</h3>
-  <ul>
-      <li>Username: {{userData.username}}</li>
-      <li>Email: {{userData.email}}</li>
-    </ul>
-    <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Submit Current Activity</button>
-    <br>
-    <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Activity</button>
-</div>
-</div>
-<div class='accountContainerR' >
-    <div class='saved2'>
-      <h3>Completed Destinations</h3>
-      <ul>
-          <li>Username: {{userData.username}}</li>
-          <li>Email: {{userData.email}}</li>
-        </ul>
-        <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Completed Event</button>
-        <br>
-        <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Event</button>
+  <h1 class='title'>{{userData.username}}'s Account</h1>
+  <div fxLayoutAlign="center center" style="text-align: center">
+    <div>
+      <h3>Account Info</h3>
+      Username: {{userData.username}}
+      <br />
+      Email: {{userData.email}}
+      <br /><br />
+      <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
+      <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
     </div>
-    </div>
-</div>
-<!-- Admin Footer -->
-<div class="admin" style="text-align: center" fxLayoutAlign="center center">
-  <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on the
-    site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply to
-    become an Admin.</p>
-</div>
+  </div>
+  <h3 style="text-align: center">Bucket List</h3>
+  <div class="wrapper" style="text-align: center;">
+    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerL">
+      <tr>
+        <th mat-sort-header="name">Dessert (100g)</th>
+        <th mat-sort-header="calories">Calories</th>
+        <th mat-sort-header="fat">Fat (g)</th>
+      </tr>
+      <tr>
+        <td>Cinnabon</td>
+        <td>10k</td>
+        <td>0%</td>
+      </tr>
+    </table>
+
+    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerC">
+      <tr>
+        <th mat-sort-header="name">Dessert (100g)</th>
+        <th mat-sort-header="calories">Calories</th>
+        <th mat-sort-header="fat">Fat (g)</th>
+      </tr>
+      <tr>
+        <td>Cinnabon</td>
+        <td>10k</td>
+        <td>0%</td>
+      </tr>
+    </table>
+
+    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerR">
+      <tr>
+        <th mat-sort-header="name">Dessert (100g)</th>
+        <th mat-sort-header="calories">Calories</th>
+        <th mat-sort-header="fat">Fat (g)</th>
+      </tr>
+      <tr>
+        <td>Cinnabon</td>
+        <td>10k</td>
+        <td>0%</td>
+      </tr>
+    </table>
+  </div>
+  <h3 style="text-align: center">Completed Activities</h3>
+  <div class="wrapper" style="text-align: center;">
+    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerL">
+      <tr>
+        <th mat-sort-header="name">Dessert (100g)</th>
+        <th mat-sort-header="calories">Calories</th>
+        <th mat-sort-header="fat">Fat (g)</th>
+      </tr>
+      <tr>
+        <td>Cinnabon</td>
+        <td>10k</td>
+        <td>0%</td>
+      </tr>
+    </table>
+
+    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerC">
+      <tr>
+        <th mat-sort-header="name">Dessert (100g)</th>
+        <th mat-sort-header="calories">Calories</th>
+        <th mat-sort-header="fat">Fat (g)</th>
+      </tr>
+      <tr>
+        <td>Cinnabon</td>
+        <td>10k</td>
+        <td>0%</td>
+      </tr>
+    </table>
+
+    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerR">
+      <tr>
+        <th mat-sort-header="name">Dessert (100g)</th>
+        <th mat-sort-header="calories">Calories</th>
+        <th mat-sort-header="fat">Fat (g)</th>
+      </tr>
+      <tr>
+        <td>Cinnabon</td>
+        <td>10k</td>
+        <td>0%</td>
+      </tr>
+    </table>
+  </div>
+  <!-- Admin Footer -->
+  <div class="admin" style="text-align: center" fxLayoutAlign="center center">
+    <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on
+      the
+      site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply
+      to
+      become an Admin.</p>
+  </div>
 </div>
