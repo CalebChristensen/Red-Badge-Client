@@ -17,6 +17,9 @@ import { UpdAccModalComponent } from './modals/upd-acc-modal/upd-acc-modal.compo
 import { DelAccModalComponent } from './modals/del-acc-modal/del-acc-modal.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminDelModalComponent } from './modals/admin-del-modal/admin-del-modal.component';
+import { PoiModalComponent } from './modals/poi-modal/poi-modal.component';
+import { RestModalComponent } from './modals/rest-modal/rest-modal.component';
+import { TourModalComponent } from './modals/tour-modal/tour-modal.component';
 
 
 @NgModule({
@@ -31,7 +34,10 @@ import { AdminDelModalComponent } from './modals/admin-del-modal/admin-del-modal
     UpdAccModalComponent,
     DelAccModalComponent,
     AdminComponent,
-    AdminDelModalComponent
+    AdminDelModalComponent,
+    PoiModalComponent,
+    RestModalComponent,
+    TourModalComponent
 
   ],
   imports: [
@@ -44,6 +50,6 @@ import { AdminDelModalComponent } from './modals/admin-del-modal/admin-del-modal
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent]
+  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent, PoiModalComponent, TourModalComponent, RestModalComponent ]
 })
 export class AppModule { }

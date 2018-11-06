@@ -1,103 +1,39 @@
-<div class="animated fadeIn slower">
-  <h1 class='title'>{{userData.username}}'s Account</h1>
-  <div fxLayoutAlign="center center" style="text-align: center">
-    <div>
-      <h3>Account Info</h3>
-      Username: {{userData.username}}
-      <br />
-      Email: {{userData.email}}
-      <br /><br />
-      <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
-      <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
+<div class="jumbo animated fadeIn slower">
+  <div *ngIf='userData'>
+    <h1 class='title'>{{userData.username}}'s Account</h1>
+    <div fxLayoutAlign="center center" style="text-align: center">
+      <div>
+        <h3>Account Info</h3>
+        Username: {{userData.username}}
+        <br />
+        Email: {{userData.email}}
+        <br /><br />
+        <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
+        <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
+      </div>
     </div>
   </div>
+  <br />
   <h3 style="text-align: center">Bucket List</h3>
-  <div class="wrapper" style="text-align: center;">
-    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerL">
-      <tr>
-        <th mat-sort-header="name">Dessert (100g)</th>
-        <th mat-sort-header="calories">Calories</th>
-        <th mat-sort-header="fat">Fat (g)</th>
-      </tr>
-      <tr>
-        <td>Cinnabon</td>
-        <td>10k</td>
-        <td>0%</td>
-      </tr>
-    </table>
-
-    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerC">
-      <tr>
-        <th mat-sort-header="name">Dessert (100g)</th>
-        <th mat-sort-header="calories">Calories</th>
-        <th mat-sort-header="fat">Fat (g)</th>
-      </tr>
-      <tr>
-        <td>Cinnabon</td>
-        <td>10k</td>
-        <td>0%</td>
-      </tr>
-    </table>
-
-    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerR">
-      <tr>
-        <th mat-sort-header="name">Dessert (100g)</th>
-        <th mat-sort-header="calories">Calories</th>
-        <th mat-sort-header="fat">Fat (g)</th>
-      </tr>
-      <tr>
-        <td>Cinnabon</td>
-        <td>10k</td>
-        <td>0%</td>
-      </tr>
-    </table>
+  <div fxLayoutAlign="center center" style="text-align: center">
+    <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+    <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
+    <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
   </div>
+  <br /><br />
   <h3 style="text-align: center">Completed Activities</h3>
-  <div class="wrapper" style="text-align: center;">
-    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerL">
-      <tr>
-        <th mat-sort-header="name">Dessert (100g)</th>
-        <th mat-sort-header="calories">Calories</th>
-        <th mat-sort-header="fat">Fat (g)</th>
-      </tr>
-      <tr>
-        <td>Cinnabon</td>
-        <td>10k</td>
-        <td>0%</td>
-      </tr>
-    </table>
-
-    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerC">
-      <tr>
-        <th mat-sort-header="name">Dessert (100g)</th>
-        <th mat-sort-header="calories">Calories</th>
-        <th mat-sort-header="fat">Fat (g)</th>
-      </tr>
-      <tr>
-        <td>Cinnabon</td>
-        <td>10k</td>
-        <td>0%</td>
-      </tr>
-    </table>
-
-    <table matSort (matSortChange)="sortData($event)" style="background-color: white; color:black" class="authContainerR">
-      <tr>
-        <th mat-sort-header="name">Dessert (100g)</th>
-        <th mat-sort-header="calories">Calories</th>
-        <th mat-sort-header="fat">Fat (g)</th>
-      </tr>
-      <tr>
-        <td>Cinnabon</td>
-        <td>10k</td>
-        <td>0%</td>
-      </tr>
-    </table>
+  <div fxLayoutAlign="center center" style="text-align: center">
+    <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+    <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
+    <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
   </div>
+
   <!-- Admin Footer -->
   <div class="admin" style="text-align: center" fxLayoutAlign="center center">
-    <p>Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on
+    <p style="background-color:black">Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on
       the
-      site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to apply
+      site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to
+      apply
       to
       become an Admin.</p>
   </div>

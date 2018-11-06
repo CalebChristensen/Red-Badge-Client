@@ -1,0 +1,13 @@
+<div *ngIf='places'>
+  <div *ngFor='let poi of places'>
+    <div class="card animated fadeInUp slower">
+      <div class="cardContainer">
+        <h3>{{ poi.name }}</h3>
+        <p><i> {{ poi.name_suffix }} </i></p>
+        <p>Website: <br /><a href="{{ poi.url }}">Click For More Information</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button mat-raised-button (click)='close()'>Cancel</button>

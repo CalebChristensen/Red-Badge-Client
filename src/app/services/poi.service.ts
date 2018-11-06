@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Http, Headers, RequestOptions } from '@angular/http';
 import { Poi } from '../poi';
 import { Tour } from '../tour';
 import { Rest } from '../rest';
@@ -60,11 +59,23 @@ export class PoiService {
   }
 
   addTour(name: string, starts_on: string, url: string) {
-    return this.http.post<Tour>(`http://localhost:3000/buckettours/create`, {name:name, starts_on: starts_on, url: url}, httpOptions)
+    return this.http.post<Tour>(`http://localhost:3000/buckettour/create`, {name:name, starts_on: starts_on, url: url}, httpOptions)
   }
 
   addRest(name: string, name_suffix: string, url: string) {
     return this.http.post<Rest>(`http://localhost:3000/bucketrest/create`, {name:name, name_suffix:name_suffix, url: url}, httpOptions)
+  }
+
+  accountPoi() {
+    return this.http.get(`http://localhost:3000/bucketpoi/getall`, httpOptions)
+  }
+
+  accountRest() {
+    return this.http.get(`http://localhost:3000/bucketrest/getall`, httpOptions)
+  }
+
+  accountTour() {
+    return this.http.get(`http://localhost:3000/buckettour/getall`, httpOptions)
   }
 
 }

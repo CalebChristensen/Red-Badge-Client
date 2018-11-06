@@ -1,0 +1,13 @@
+<div *ngIf='tour'>
+    <div *ngFor='let trip of tour'>
+      <div class='card2 animated fadeInUp slower'>
+        <div class='cardContainer2'>
+          <h3>{{ trip.name }}</h3>
+          <p>Date {{ trip.starts_on }}</p>
+          <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<button mat-raised-button (click)='close()'>Cancel</button>

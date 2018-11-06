@@ -1,3 +1,11 @@
+.jumbo {
+  background-image: url(../../assets/bnobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 p {
     position: fixed;
     bottom: 4%

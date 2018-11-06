@@ -9,19 +9,9 @@ a {
   padding: 2px 16px;
 }
 
-.poiPicture {
-  height: 150px;
-}
 
-.jumbo {
-  background-image: url(../../assets/poi-jumbo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
 .card2 {
-  background-image: url(../../assets/example-card.jpg);
+  background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -42,7 +32,7 @@ button {
 
 /* Desktop PC & Responsive */
 .card {
-  background-image: url(../../assets/example-card.jpg);
+  background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -58,7 +48,7 @@ button {
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .card {
-    background-image: url(../../assets/example-card.jpg);
+    background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -75,7 +65,7 @@ button {
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .card {
-    background-image: url(../../assets/example-card.jpg);
+    background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -92,7 +82,7 @@ button {
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .card {
-  background-image: url(../../assets/example-card.jpg);
+  background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -109,7 +99,7 @@ button {
 /* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 412px) {
   .card {
-  background-image: url(../../assets/example-card.jpg);
+  background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
@@ -126,7 +116,7 @@ button {
 /* Iphone 5/SE & Galaxy S5 */
 @media screen and (max-width: 375px) {
   .card {
-  background-image: url(../../assets/example-card.jpg);
+  background-image: url(../../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 4px 20px black;
