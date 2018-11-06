@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http, Headers, RequestOptions } from '@angular/http';
-import { Poi } from '../poi'
+import { Poi } from '../poi';
+import { Tour } from '../tour';
+import { Rest } from '../rest';
 
 let token = sessionStorage.getItem('token')
 
@@ -53,7 +55,16 @@ export class PoiService {
     return this.http.get(`http://localhost:3000/id/getallcities/${id}`)
   }
 
-  addPoi(name: string, name_suffix: string) {
-    return this.http.post<Poi>(`http://localhost:3000/bucketpoi/create`, {name: name, name_suffix: name_suffix}, httpOptions)
+  addPoi(name: string, name_suffix: string, url: string) {
+    return this.http.post<Poi>(`http://localhost:3000/bucketpoi/create`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
   }
+
+  addTour(name: string, starts_on: string, url: string) {
+    return this.http.post<Tour>(`http://localhost:3000/buckettours/create`, {name:name, starts_on: starts_on, url: url}, httpOptions)
+  }
+
+  addRest(name: string, name_suffix: string, url: string) {
+    return this.http.post<Rest>(`http://localhost:3000/bucketrest/create`, {name:name, name_suffix:name_suffix, url: url}, httpOptions)
+  }
+
 }
