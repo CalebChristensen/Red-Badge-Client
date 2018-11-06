@@ -56,8 +56,17 @@ export class PoiComponent implements OnInit {
   })
 }
 
-    addPoi(name: string, name_suffix: string) {
-      this.poiService.addPoi(name, name_suffix).subscribe()
+    addPoi(name: string, name_suffix: string, url: string) {
+      this.poiService.addPoi(name, name_suffix, url).subscribe()
     }
+
+    addTour(name: string, start_on: string, url: string) {
+      this.poiService.addTour(name, start_on, url).subscribe()
+    }
+
+    addRest(name: string, name_suffix: string, url: string) {
+      this.poiService.addRest(name, name_suffix, url).subscribe()
+    }
+
 
 }
