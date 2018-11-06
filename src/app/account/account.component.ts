@@ -1,9 +1,10 @@
-import { Component, OnInit, Inject } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { AccountService } from '../services/account.service'
 import { MatDialog } from '@angular/material'
 import { UpdAccModalComponent } from '../modals/upd-acc-modal/upd-acc-modal.component';
 import { FormControl } from '@angular/forms';
 import { DelAccModalComponent } from '../modals/del-acc-modal/del-acc-modal.component';
+import { PoiService } from '../services/poi.service';
 
 @Component({
   selector: 'app-account',
