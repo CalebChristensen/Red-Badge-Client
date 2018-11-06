@@ -8,9 +8,52 @@ p {
 }
 
 .accountInfo {
-    float: left
+  float: right;
+  text-align: center
+}
+
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange
 }
 
 .saved {
     float: right;
+    text-align: center;
+}
+.saved2 {
+  float: left;
+  text-align: center;
+}
+
+.admin {
+ text-align: center;
+ width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100%, auto);
+  background-color: black;
+  width: 100%;
+}
+
+.authContainerL {
+  grid-column: 1;
+  color:white;
+  
+}
+.authContainerC {
+  grid-column: 2;
+}
+.authContainerR {
+  grid-column: 3;
+  color: white;
+}
+
+a {
+  color: darkorange;
 }

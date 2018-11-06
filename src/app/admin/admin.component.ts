@@ -3,6 +3,7 @@ import { AuthService } from '../services/auth.service';
 import { MatDialog } from '@angular/material';
 import { UpdAccModalComponent } from '../modals/upd-acc-modal/upd-acc-modal.component';
 import { DelAccModalComponent } from '../modals/del-acc-modal/del-acc-modal.component';
+import { AdminDelModalComponent } from '../modals/admin-del-modal/admin-del-modal.component';
 
 @Component({
   selector: 'app-admin',
@@ -20,14 +21,13 @@ export class AdminComponent implements OnInit {
   }
 
   openUpdateDialog(id): void {
-    this.dialog.open(UpdAccModalComponent, {
-      panelClass: 'dialog'
-    })
     sessionStorage.setItem('userId', id)
+    this.dialog.open(UpdAccModalComponent)
   }
 
-  openDeleteDialog(): void {
-    this.dialog.open(DelAccModalComponent)
+  openDeleteDialog(id): void {
+    sessionStorage.setItem('userId', id)
+    this.dialog.open(AdminDelModalComponent)
   }
 
 }

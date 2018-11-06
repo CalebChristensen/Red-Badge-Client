@@ -25,7 +25,7 @@
               <tr>
                 <td>
                   <mat-form-field>
-                    <input matInput placeholder="Password" type="password" id="password" [formControl]="password" class="form-control" />
+                    <input matInput placeholder="Password" type="password" id="password" minLength="5" required [formControl]="password" class="form-control" />
                   </mat-form-field>
                 </td>
               </tr>

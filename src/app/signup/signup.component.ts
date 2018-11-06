@@ -21,7 +21,6 @@ export class SignupComponent implements OnInit {
   signUp() {
     this.auth.signUp(this.username.value, this.email.value, this.password.value)
     .subscribe(user => {
-      console.log(user)
       sessionStorage.setItem('token', user.sessionToken)
       alert(user.message)
       window.location.href = '/home'

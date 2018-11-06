@@ -20,17 +20,12 @@ export class AccountComponent implements OnInit {
   constructor(private acc: AccountService, public dialog: MatDialog) { }
 
   ngOnInit() {
-    this.acc.getUser().subscribe(user => {
-      this.userData = user
-      console.log(this.userData)
-    })
+    this.acc.getUser().subscribe(user => this.userData = user)
   }
 
   openUpdateDialog(id): void {
-    this.dialog.open(UpdAccModalComponent, {
-      panelClass: 'dialog'
-    })
     sessionStorage.setItem('userId', id)
+    this.dialog.open(UpdAccModalComponent)
   }
 
   openDeleteDialog(): void {

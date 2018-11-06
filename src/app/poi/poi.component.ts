@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
 import { PoiService } from '../services/poi.service';
 import { getPreviousOrParentTNode } from '@angular/core/src/render3/instructions';
+import { Observable, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-poi',
@@ -25,16 +26,12 @@ export class PoiComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    return this.poiService.getCountries().subscribe(data => {
-      this.array = data
-    })
-
+    return this.poiService.getCountries().subscribe(data => this.array = data)
   }
+  
 
   getCities() {
-    return this.poiService.getCities(this.countryName.value).subscribe(data => {
-      this.cities = data
-    })
+    return this.poiService.getCities(this.countryName.value).subscribe(data => this.cities = data)
   }
 
   getPoi(e): void {
@@ -58,5 +55,9 @@ export class PoiComponent implements OnInit {
     this.restaurants = ''
   })
 }
+
+    addPoi(name: string, name_suffix: string) {
+      this.poiService.addPoi(name, name_suffix).subscribe()
+    }
 
 }
