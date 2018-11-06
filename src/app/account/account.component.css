@@ -38,7 +38,6 @@ button {
   grid-gap: 10px;
   grid-auto-rows: minmax(100%, auto);
   background-color: black;
-  width: 100%;
 }
 
 .authContainerL {
@@ -55,5 +54,13 @@ button {
 }
 
 a {
+  color: darkorange;
+}
+
+h1 {
+  color: darkorange;
+}
+
+h3 {
   color: darkorange;
 }
