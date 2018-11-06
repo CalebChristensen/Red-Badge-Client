@@ -26,17 +26,12 @@ export class PoiComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    return this.poiService.getCountries().subscribe(data => {
-      this.array = data
-      
-    })
+    return this.poiService.getCountries().subscribe(data => this.array = data)
   }
   
 
   getCities() {
-    return this.poiService.getCities(this.countryName.value).subscribe(data => {
-      this.cities = data
-    })
+    return this.poiService.getCities(this.countryName.value).subscribe(data => this.cities = data)
   }
 
   getPoi(e): void {
