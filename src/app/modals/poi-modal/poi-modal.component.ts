@@ -20,6 +20,14 @@ export class PoiModalComponent implements OnInit {
     this.poi.accountPoi().subscribe(data => this.places = data)
   }
 
+  completedPoi(name: string, name_suffix: string, url: string) {
+    this.poi.completedPoi(name, name_suffix, url).subscribe()
+  }
+
+  deletePoi() {
+    
+  }
+
   close() {
     this.dialog.close()
   }

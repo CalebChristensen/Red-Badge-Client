@@ -20,6 +20,10 @@ export class TourModalComponent implements OnInit {
     this.poi.accountTour().subscribe(data => this.tour = data)
   }
 
+  completedTour(name: string, starts_on: string, url: string) {
+    this.poi.completedTour(name, starts_on, url).subscribe()
+  }
+
   close() {
     this.dialog.close()
   }

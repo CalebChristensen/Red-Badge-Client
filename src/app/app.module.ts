@@ -20,9 +20,13 @@ import { AdminDelModalComponent } from './modals/admin-del-modal/admin-del-modal
 import { PoiModalComponent } from './modals/poi-modal/poi-modal.component';
 import { RestModalComponent } from './modals/rest-modal/rest-modal.component';
 import { TourModalComponent } from './modals/tour-modal/tour-modal.component';
+import { CompletedPoiModalComponent } from './modals/completed-poi-modal/completed-poi-modal.component';
+import { CompletedRestModalComponent } from './modals/completed-rest-modal/completed-rest-modal.component';
+import { CompletedTourModalComponent } from './modals/completed-tour-modal/completed-tour-modal.component';
 import { NoteModalComponent } from './modals/note-modal/note-modal.component';
 import { DeleteNoteModalComponent } from './modals/delete-note-modal/delete-note-modal.component';
 import { UpdateNoteModalComponent } from './modals/update-note-modal/update-note-modal.component';
+
 
 
 @NgModule({
@@ -41,9 +45,15 @@ import { UpdateNoteModalComponent } from './modals/update-note-modal/update-note
     PoiModalComponent,
     RestModalComponent,
     TourModalComponent,
+
+    CompletedPoiModalComponent,
+    CompletedRestModalComponent,
+    CompletedTourModalComponent
+
     NoteModalComponent,
     DeleteNoteModalComponent,
     UpdateNoteModalComponent
+
 
   ],
   imports: [
@@ -56,6 +66,8 @@ import { UpdateNoteModalComponent } from './modals/update-note-modal/update-note
   ],
   providers: [],
   bootstrap: [AppComponent],
+
+  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent, PoiModalComponent, TourModalComponent, RestModalComponent, CompletedPoiModalComponent, CompletedRestModalComponent, CompletedTourModalComponent ]
   entryComponents: [
     UpdAccModalComponent,
     DelAccModalComponent,

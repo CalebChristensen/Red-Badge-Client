@@ -78,4 +78,27 @@ export class PoiService {
     return this.http.get(`http://localhost:3000/buckettour/getall`, httpOptions)
   }
 
+  completedPoi(name: string, name_suffix: string, url: string) {
+    return this.http.post<Poi>(`http://localhost:3000/completepoi/completed`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
+  }
+
+  completedRest(name: string, name_suffix: string, url: string) {
+    return this.http.post<Rest>(`http://localhost:3000/completerest/completed`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
+  }
+
+  completedTour(name: string, starts_on: string, url: string) {
+    return this.http.post<Tour>(`http://localhost:3000/completetour/completed`,{name:name, starts_on: starts_on, url: url}, httpOptions)
+  }
+
+  getCompletedPoi() {
+    return this.http.get(`http://localhost:3000/completepoi/getall`, httpOptions)
+  }
+
+  getCompletedRest() {
+    return this.http.get(`http://localhost:3000/completerest/getall`, httpOptions)
+  }
+
+  getCompletedTour() {
+    return this.http.get(`http://localhost:3000/completetour/getall`, httpOptions)
+  }
 }

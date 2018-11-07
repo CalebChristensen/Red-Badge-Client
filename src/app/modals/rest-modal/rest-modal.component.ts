@@ -20,6 +20,10 @@ export class RestModalComponent implements OnInit {
     this.poi.accountRest().subscribe(data => this.rest = data)
   }
 
+  completedRest(name: string, name_suffix: string, url: string) {
+    this.poi.completedRest(name, name_suffix, url).subscribe()
+  }
+
   close() {
     this.dialog.close()
   }
