@@ -45,11 +45,9 @@ import { UpdateNoteModalComponent } from './modals/update-note-modal/update-note
     PoiModalComponent,
     RestModalComponent,
     TourModalComponent,
-
     CompletedPoiModalComponent,
     CompletedRestModalComponent,
-    CompletedTourModalComponent
-
+    CompletedTourModalComponent,
     NoteModalComponent,
     DeleteNoteModalComponent,
     UpdateNoteModalComponent
@@ -67,16 +65,6 @@ import { UpdateNoteModalComponent } from './modals/update-note-modal/update-note
   providers: [],
   bootstrap: [AppComponent],
 
-  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent, PoiModalComponent, TourModalComponent, RestModalComponent, CompletedPoiModalComponent, CompletedRestModalComponent, CompletedTourModalComponent ]
-  entryComponents: [
-    UpdAccModalComponent,
-    DelAccModalComponent,
-    AdminDelModalComponent,
-    PoiModalComponent,
-    TourModalComponent,
-    RestModalComponent,
-    NoteModalComponent,
-    DeleteNoteModalComponent,
-    UpdateNoteModalComponent ]
+  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent, PoiModalComponent, TourModalComponent, RestModalComponent, CompletedPoiModalComponent, CompletedRestModalComponent, CompletedTourModalComponent, UpdateNoteModalComponent, NoteModalComponent, DeleteNoteModalComponent ]
 })
 export class AppModule { }

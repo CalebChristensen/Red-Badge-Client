@@ -138,11 +138,11 @@ h3 {
 
 li {
   list-style: none
-
-button {
+}
+Button {
   border: 1px solid black;
   margin: 5px;
-  background-color: darkorange
+  background-color: darkorange;
 }
 
 /* Footer Text */
