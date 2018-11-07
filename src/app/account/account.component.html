@@ -13,6 +13,41 @@
       </div>
     </div>
   </div>
+
+
+  <br><br>
+
+  <h3 style='text-align: center'>Notes</h3>
+  <div fxLayoutAlign='center center'>
+    <ul *ngIf='notes'>
+      <li *ngFor='let note of notes'>
+        {{note.note}}
+        <button (click)='updateNoteDialog(note.id)'>Update</button>
+        <button (click)='deleteNoteDialog(note.id)'>Delete</button>
+      </li>
+    </ul>
+  </div>
+  
+  <div fxLayoutAlign='center center'>
+    <button mat-raised-button (click)='openNoteDialog()' fxLayoutAlign='center'>Add Note</button>
+  </div>
+
+  <br /><br>
+  
+  <h3 style="text-align: center">Bucket List</h3>
+  <div fxLayoutAlign="center center" style="text-align: center">
+    <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+    <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
+    <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
+  </div>
+
+  <br /><br />
+  <h3 style="text-align: center">Completed Activities</h3>
+  <div fxLayoutAlign="center center" style="text-align: center">
+    <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+    <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
+    <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
+
   <br />
   <div class="bucketList">
     <h3 style="text-align: center">Bucket List</h3>
@@ -28,6 +63,7 @@
       <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
       <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
     </div>
+
   </div>
   <!-- Admin Footer -->
   <div class="admin" style="text-align: center" fxLayoutAlign="center center">
