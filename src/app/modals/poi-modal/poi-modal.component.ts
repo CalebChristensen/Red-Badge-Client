@@ -24,8 +24,10 @@ export class PoiModalComponent implements OnInit {
     this.poi.completedPoi(name, name_suffix, url).subscribe()
   }
 
-  deletePoi() {
-    
+  deletePoi(id) {
+    this.poi.deletePoi(id).subscribe()
+    this.dialog.close()
+    window.location.reload()
   }
 
   close() {

@@ -24,6 +24,12 @@ export class RestModalComponent implements OnInit {
     this.poi.completedRest(name, name_suffix, url).subscribe()
   }
 
+  deleteRest(id) {
+    this.poi.deleteRest(id).subscribe()
+    this.dialog.close()
+    window.location.reload()
+  }
+
   close() {
     this.dialog.close()
   }
