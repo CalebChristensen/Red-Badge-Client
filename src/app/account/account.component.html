@@ -1,33 +1,42 @@
+<!-- ACCOUNT -->
 <div class="jumbo animated fadeIn slower">
-  <div *ngIf='userData'>
-    <h1 class='title'>{{userData.username}}'s Account</h1>
-    <div style="text-align: center">
-      <div class="accountInfo">
-        <h3>Account Info</h3>
-        Username: {{userData.username}}
-        <br />
-        Email: {{userData.email}}
-        <br /><br />
-        <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
-        <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
+  <h1 class='title'>{{userData.username}}'s Account</h1>
+  <div class="accountInfo">
+    <div *ngIf='userData'>
+      <div style="text-align: center">
+        <div>
+          <h3>Account Info</h3>
+          Username: {{userData.username}}
+          <br />
+          Email: {{userData.email}}
+          <br /><br />
+          <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
+          <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
+        </div>
       </div>
     </div>
-  </div>
   <br><br>
+  <!-- NOTES -->
   <h3 style='text-align: center'>Notes</h3>
   <div fxLayoutAlign='center center'>
     <ul *ngIf='notes'>
-      <li *ngFor='let note of notes'>
-        {{note.note}}
-        <button (click)='updateNoteDialog(note.id)'>Update</button>
-        <button (click)='deleteNoteDialog(note.id)'>Delete</button>
-      </li>
+      <div *ngFor='let note of notes' class='notesStuff'>
+        <div class='noteLeft'>
+          <li> {{note.note}} </li>
+        </div>
+        <div class='noteRight'>
+          <button (click)='updateNoteDialog(note.id)'>Update</button>
+          <button (click)='deleteNoteDialog(note.id)'>Delete</button>
+        </div>
+      </div>
     </ul>
   </div>
   <div fxLayoutAlign='center center'>
     <button mat-raised-button (click)='openNoteDialog()' fxLayoutAlign='center'>Add Note</button>
   </div>
+  </div>
   <br /><br>
+  <!-- BUCKET LIST -->
   <div class="bucketList">
     <h3 style="text-align: center">Bucket List</h3>
     <div fxLayoutAlign="center center" style="text-align: center">
@@ -36,6 +45,7 @@
       <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
     </div>
     <br /><br /><br />
+    <!-- COMPLETED LIST -->
     <h3 style="text-align: center">Completed Activities</h3>
     <div fxLayoutAlign="center center" style="text-align: center">
       <button mat-raised-button (click)='openCompletedPoiDialog()'>Completed Points Of Interest</button>
@@ -43,14 +53,5 @@
       <button mat-raised-button type='submit' (click)='openCompletedTourDialog()'>Completed Tours</button>
     </div>
   </div>
-  <!-- Admin Footer -->
-  <div class="admin" style="text-align: center" fxLayoutAlign="center center">
-    <p style="background-color:black">Want to become an Admin? Admin's have the ability to control the database in case
-      of inappropriate actions on
-      the
-      site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to
-      apply
-      to
-      become an Admin.</p>
-  </div>
 </div>
+

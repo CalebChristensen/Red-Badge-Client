@@ -2,6 +2,7 @@ button {
     border: 1px solid black;
     margin: 5px;
     background-color: darkorange;
+    height: 40px
 }
 
 .navbar {
@@ -10,6 +11,10 @@ button {
   background-image: url(../assets/navbar-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hopesFav {
+  height: 34px;
 }
 
 /* Desktop PC & Responsive */
