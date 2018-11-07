@@ -115,7 +115,12 @@
 /* Text Color & Buttons */
 
 .title {
-  text-align: center
+  text-align: center;
+  top: 43%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 a {
@@ -144,6 +149,11 @@ button {
 
 p {
   position: fixed;
-  bottom: 0%
 
+  text-align: center;
+  bottom: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
