@@ -13,42 +13,44 @@
 .accountInfo {
   float:left;
   margin-left: 30vh;
-  margin-top: 7vh;
+  margin-top: 2vh;
+  max-width: 50vh;
+  
 }
 
 .bucketList {
   float: right;
-  margin-right: 30vh;
-  margin-top: 10vh;
+  margin-right: 25vh;
+  margin-top: 4vh;
 }
 
 /* Responsive */
 @media screen and (max-width: 1157px) {
   .accountInfo {
     float:left;
-    margin-left: 30vh;
-    margin-top: 7vh;
+    margin-left: 1vh;
+    margin-top: 2vh;
+    max-width: 50vh;
   }
   
   .bucketList {
     float: right;
-    margin-right: 30vh;
-    margin-top: 10vh;
+    margin-right: 1vh;
+    margin-top: 4vh;
   }
 }
 
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .accountInfo {
-    float:left;
-    margin-left: 30vh;
-    margin-top: 7vh;
+    
+    margin-top: 2vh;
+    max-width: 50vh;
   }
   
   .bucketList {
-    float: right;
-    margin-right: 30vh;
-    margin-top: 10vh;
+    
+    margin-top: 4vh;
   }
 }
 
@@ -57,13 +59,14 @@
   .accountInfo {
     float:left;
     margin-left: 30vh;
-    margin-top: 7vh;
+    margin-top: 2vh;
+    max-width: 50vh;
   }
   
   .bucketList {
     float: right;
-    margin-right: 30vh;
-    margin-top: 10vh;
+    margin-right: 25vh;
+    margin-top: 4vh;
   }
 }
 
@@ -72,13 +75,14 @@
   .accountInfo {
     float:left;
     margin-left: 30vh;
-    margin-top: 7vh;
+    margin-top: 2vh;
+    max-width: 50vh;
   }
   
   .bucketList {
     float: right;
-    margin-right: 30vh;
-    margin-top: 10vh;
+    margin-right: 25vh;
+    margin-top: 4vh;
   }
 }
 
@@ -87,13 +91,14 @@
   .accountInfo {
     float:left;
     margin-left: 30vh;
-    margin-top: 7vh;
+    margin-top: 2vh;
+    max-width: 50vh;
   }
   
   .bucketList {
     float: right;
-    margin-right: 30vh;
-    margin-top: 10vh;
+    margin-right: 25vh;
+    margin-top: 4vh;
   }
 }
 
@@ -102,13 +107,14 @@
   .accountInfo {
     float:left;
     margin-left: 30vh;
-    margin-top: 7vh;
+    margin-top: 2vh;
+    max-width: 50vh;
   }
   
   .bucketList {
     float: right;
-    margin-right: 30vh;
-    margin-top: 10vh;
+    margin-right: 25vh;
+    margin-top: 4vh;
   }
 }
 
@@ -147,13 +153,24 @@ Button {
 
 /* Footer Text */
 
-p {
-  position: fixed;
-
+.admin {
+  position: relative;
   text-align: center;
   bottom: 0%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+}
+
+.notesStuff {
+  display: block
+}
+
+.noteLeft {
+  float: left;
+}
+
+.noteRight {
+  float: right
 }
