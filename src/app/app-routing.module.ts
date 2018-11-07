@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'poi', component: PoiComponent},
-  {path: 'account', component: AccountComponent},
+  {path: 'account', component: AccountComponent, canActivate: [AuthGuard]},
   {path: 'formspree', component: FormspreeComponent},
   {path: 'admin', component: AdminComponent}
 ];

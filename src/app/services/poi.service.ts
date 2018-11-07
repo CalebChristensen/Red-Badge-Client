@@ -101,4 +101,17 @@ export class PoiService {
   getCompletedTour() {
     return this.http.get(`http://localhost:3000/completetour/getall`, httpOptions)
   }
+
+  deletePoi(id){
+    return this.http.delete(`http://localhost:3000/bucketpoi/delete/${id}`,
+    httpOptions)
+  }
+
+  deleteRest(id) {
+    return this.http.delete(`http://localhost:3000/bucketrest/delete/${id}`, httpOptions)
+  }
+
+  deleteTour(id) {
+    return this.http.delete(`http://localhost:3000/buckettour/delete/${id}`, httpOptions)
+  }
 }
