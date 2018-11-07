@@ -1,3 +1,4 @@
+/* Background Image */
 .jumbo {
   background-image: url(../../assets/bnobg.jpg);
   background-repeat: no-repeat;
@@ -6,59 +7,115 @@
   min-height: 100vh;
 }
 
-p {
-    position: fixed;
-    bottom: 4%
+/* Button Groups / Media Queries */
+
+/* Desktop PC */
+.accountInfo {
+  float:left;
+  margin-left: 30vh;
+  margin-top: 7vh;
 }
+
+.bucketList {
+  float: right;
+  margin-right: 30vh;
+  margin-top: 10vh;
+}
+
+/* Responsive */
+@media screen and (max-width: 1157px) {
+  .accountInfo {
+    float:left;
+    margin-left: 30vh;
+    margin-top: 7vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10vh;
+  }
+}
+
+/* Ipad Pro COMPLETE */
+@media screen and (max-width: 1024px) {
+  .accountInfo {
+    float:left;
+    margin-left: 30vh;
+    margin-top: 7vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10vh;
+  }
+}
+
+/* Ipad COMPLETE */
+@media screen and (max-width: 769px) {
+  .accountInfo {
+    float:left;
+    margin-left: 30vh;
+    margin-top: 7vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10vh;
+  }
+}
+
+/* Iphone 6/7/8 Plus COMPLETE */
+@media screen and (max-width: 414px) {
+  .accountInfo {
+    float:left;
+    margin-left: 30vh;
+    margin-top: 7vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10vh;
+  }
+}
+
+/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 412px) {
+  .accountInfo {
+    float:left;
+    margin-left: 30vh;
+    margin-top: 7vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10vh;
+  }
+}
+
+/* Iphone 5/SE & Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .accountInfo {
+    float:left;
+    margin-left: 30vh;
+    margin-top: 7vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 30vh;
+    margin-top: 10vh;
+  }
+}
+
+/* Text Color & Buttons */
 
 .title {
-    text-align: center
-}
-
-.accountInfo {
-  float: right;
   text-align: center
-}
-
-button {
-  border: 1px solid black;
-  margin: 5px;
-  background-color: darkorange
-}
-
-.saved {
-    float: right;
-    text-align: center;
-}
-.saved2 {
-  float: left;
-  text-align: center;
-}
-
-.admin {
- text-align: center;
- width: 100%;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100%, auto);
-  background-color: black;
-}
-
-.authContainerL {
-  grid-column: 1;
-  color:white;
-  
-}
-.authContainerC {
-  grid-column: 2;
-}
-.authContainerR {
-  grid-column: 3;
-  color: white;
 }
 
 a {
@@ -73,6 +130,20 @@ h3 {
   color: darkorange;
 }
 
+
 li {
   list-style: none
+
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange
+}
+
+/* Footer Text */
+
+p {
+  position: fixed;
+  bottom: 0%
+
 }

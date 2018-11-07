@@ -1,6 +1,6 @@
-<div *ngIf='places'>
+<div *ngIf='places' class="animated fadeIn slower">
   <div *ngFor='let poi of places'>
-    <div class="card animated fadeInUp slower">
+    <div class="card">
       <div class="cardContainer">
         <h3>{{ poi.name }}</h3>
         <p><i> {{ poi.name_suffix }} </i></p>
@@ -10,4 +10,4 @@
   </div>
 </div>
 
-<button mat-raised-button (click)='close()'>Cancel</button>
+<button mat-raised-button (click)='close()' class="animated fadeIn slower">Cancel</button>

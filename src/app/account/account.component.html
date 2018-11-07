@@ -1,8 +1,8 @@
 <div class="jumbo animated fadeIn slower">
   <div *ngIf='userData'>
     <h1 class='title'>{{userData.username}}'s Account</h1>
-    <div fxLayoutAlign="center center" style="text-align: center">
-      <div>
+    <div style="text-align: center">
+      <div class="accountInfo">
         <h3>Account Info</h3>
         Username: {{userData.username}}
         <br />
@@ -13,6 +13,7 @@
       </div>
     </div>
   </div>
+
 
   <br><br>
 
@@ -46,11 +47,28 @@
     <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
     <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
     <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
-  </div>
 
+  <br />
+  <div class="bucketList">
+    <h3 style="text-align: center">Bucket List</h3>
+    <div fxLayoutAlign="center center" style="text-align: center">
+      <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+      <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
+      <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
+    </div>
+    <br /><br /><br />
+    <h3 style="text-align: center">Completed Activities</h3>
+    <div fxLayoutAlign="center center" style="text-align: center">
+      <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+      <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
+      <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
+    </div>
+
+  </div>
   <!-- Admin Footer -->
   <div class="admin" style="text-align: center" fxLayoutAlign="center center">
-    <p style="background-color:black">Want to become an Admin? Admin's have the ability to control the database in case of inappropriate actions on
+    <p style="background-color:black">Want to become an Admin? Admin's have the ability to control the database in case
+      of inappropriate actions on
       the
       site by other users.<br /> If you are interested, please contact us <a routerLink='/formspree'>here</a> to
       apply
