@@ -135,6 +135,10 @@ h3 {
   color: darkorange;
 }
 
+
+li {
+  list-style: none
+
 button {
   border: 1px solid black;
   margin: 5px;
@@ -145,6 +149,7 @@ button {
 
 p {
   position: fixed;
+
   text-align: center;
   bottom: 0%;
   margin-left: auto;
