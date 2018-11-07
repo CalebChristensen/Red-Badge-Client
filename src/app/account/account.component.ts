@@ -90,8 +90,6 @@ export class AccountComponent implements OnInit {
     this.dialog.open(UpdateNoteModalComponent)
   }
 
-
-
   openCompletedTourDialog(): void {
     this.dialog.open(CompletedTourModalComponent)
   }

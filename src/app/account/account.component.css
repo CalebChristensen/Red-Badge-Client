@@ -25,17 +25,18 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 1159px) {
   .accountInfo {
     float:left;
-    margin-left: 1vh;
-    margin-top: 2vh;
-    max-width: 50vh;
+    margin-left: 10vh;
+    margin-top: 2.5vh;
+    max-width: 20vh;
+    
   }
   
   .bucketList {
     float: right;
-    margin-right: 1vh;
+    margin-right: 5vh;
     margin-top: 4vh;
   }
 }
@@ -43,13 +44,24 @@
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .accountInfo {
-    
-    margin-top: 2vh;
-    max-width: 50vh;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
   }
   
   .bucketList {
-    
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     margin-top: 4vh;
   }
 }
@@ -57,15 +69,24 @@
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .accountInfo {
-    float:left;
-    margin-left: 30vh;
-    margin-top: 2vh;
-    max-width: 50vh;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
   }
   
   .bucketList {
-    float: right;
-    margin-right: 25vh;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     margin-top: 4vh;
   }
 }
@@ -73,47 +94,124 @@
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .accountInfo {
-    float:left;
-    margin-left: 30vh;
-    margin-top: 2vh;
-    max-width: 50vh;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
   }
   
   .bucketList {
-    float: right;
-    margin-right: 25vh;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     margin-top: 4vh;
   }
 }
 
-/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+/* Pixel 2 & Pixel 2 XL COMPLETE */
 @media screen and (max-width: 412px) {
   .accountInfo {
-    float:left;
-    margin-left: 30vh;
-    margin-top: 2vh;
-    max-width: 50vh;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
   }
   
   .bucketList {
-    float: right;
-    margin-right: 25vh;
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     margin-top: 4vh;
   }
 }
 
-/* Iphone 5/SE & Galaxy S5 */
-@media screen and (max-width: 375px) {
+/* iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 400px) {
   .accountInfo {
-    float:left;
-    margin-left: 30vh;
-    margin-top: 2vh;
-    max-width: 50vh;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
   }
   
   .bucketList {
-    float: right;
-    margin-right: 25vh;
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+
+/* Iphone 5/SE */
+@media screen and (max-width: 330px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     margin-top: 4vh;
   }
 }
@@ -149,19 +247,10 @@ Button {
   border: 1px solid black;
   margin: 5px;
   background-color: darkorange;
+  color: whitesmoke;
 }
 
-/* Footer Text */
-
-.admin {
-  position: relative;
-  text-align: center;
-  bottom: 0%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
+/* Notes Text */
 
 .notesStuff {
   display: block

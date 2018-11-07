@@ -11,7 +11,6 @@
       <option *ngFor="let city of cities" value={{city.cityIds}}>{{ city.cityName }}</option>
     </select>
     <br /><br />
-    <!-- <input matInput type="text" [formControl]="cityName" class="searchBar"> -->
     <button mat-raised-button type='submit' (click)='getPoi()'>Points Of Interest</button>
     <button mat-raised-button type='submit' (click)='getRestaurants()'>Top Restaurants</button>
     <button mat-raised-button type='submit' (click)='getTrips()'>Book a Tour</button>
