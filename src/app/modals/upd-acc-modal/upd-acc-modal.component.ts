@@ -30,5 +30,9 @@ export class UpdAccModalComponent implements OnInit {
     this.dialog.close()
     window.location.reload()
   }
+  
+  close() {
+    this.dialog.close()
+  }
 
 }
