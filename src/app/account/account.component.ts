@@ -8,6 +8,9 @@ import { PoiService } from '../services/poi.service';
 import { PoiModalComponent } from '../modals/poi-modal/poi-modal.component';
 import { TourModalComponent } from '../modals/tour-modal/tour-modal.component';
 import { RestModalComponent } from '../modals/rest-modal/rest-modal.component';
+import { CompletedPoiModalComponent } from '../modals/completed-poi-modal/completed-poi-modal.component';
+import { CompletedRestModalComponent } from '../modals/completed-rest-modal/completed-rest-modal.component';
+import { CompletedTourModalComponent } from '../modals/completed-tour-modal/completed-tour-modal.component';
 
 @Component({
   selector: 'app-account',
@@ -55,5 +58,15 @@ export class AccountComponent implements OnInit {
     this.dialog.open(RestModalComponent)
   }
 
+  openCompletedPoiDialog(): void {
+    this.dialog.open(CompletedPoiModalComponent)
+  }
 
+  openCompletedRestDialog(): void {
+    this.dialog.open(CompletedRestModalComponent)
+  }
+
+  openCompletedTourDialog(): void {
+    this.dialog.open(CompletedTourModalComponent)
+  }
 }

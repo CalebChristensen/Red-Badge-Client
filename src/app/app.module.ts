@@ -20,6 +20,9 @@ import { AdminDelModalComponent } from './modals/admin-del-modal/admin-del-modal
 import { PoiModalComponent } from './modals/poi-modal/poi-modal.component';
 import { RestModalComponent } from './modals/rest-modal/rest-modal.component';
 import { TourModalComponent } from './modals/tour-modal/tour-modal.component';
+import { CompletedPoiModalComponent } from './modals/completed-poi-modal/completed-poi-modal.component';
+import { CompletedRestModalComponent } from './modals/completed-rest-modal/completed-rest-modal.component';
+import { CompletedTourModalComponent } from './modals/completed-tour-modal/completed-tour-modal.component';
 
 
 @NgModule({
@@ -37,7 +40,10 @@ import { TourModalComponent } from './modals/tour-modal/tour-modal.component';
     AdminDelModalComponent,
     PoiModalComponent,
     RestModalComponent,
-    TourModalComponent
+    TourModalComponent,
+    CompletedPoiModalComponent,
+    CompletedRestModalComponent,
+    CompletedTourModalComponent
 
   ],
   imports: [
@@ -50,6 +56,6 @@ import { TourModalComponent } from './modals/tour-modal/tour-modal.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent, PoiModalComponent, TourModalComponent, RestModalComponent ]
+  entryComponents: [UpdAccModalComponent, DelAccModalComponent, AdminDelModalComponent, PoiModalComponent, TourModalComponent, RestModalComponent, CompletedPoiModalComponent, CompletedRestModalComponent, CompletedTourModalComponent ]
 })
 export class AppModule { }
