@@ -22,6 +22,7 @@ export class TourModalComponent implements OnInit {
 
   completedTour(name: string, starts_on: string, url: string) {
     this.poi.completedTour(name, starts_on, url).subscribe()
+    window.location.reload()
   }
 
   deleteTour(id) {

@@ -22,6 +22,7 @@ export class RestModalComponent implements OnInit {
 
   completedRest(name: string, name_suffix: string, url: string) {
     this.poi.completedRest(name, name_suffix, url).subscribe()
+    window.location.reload()
   }
 
   deleteRest(id) {

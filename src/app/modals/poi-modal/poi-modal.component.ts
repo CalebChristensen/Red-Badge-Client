@@ -22,6 +22,7 @@ export class PoiModalComponent implements OnInit {
 
   completedPoi(name: string, name_suffix: string, url: string) {
     this.poi.completedPoi(name, name_suffix, url).subscribe()
+    window.location.reload()
   }
 
   deletePoi(id) {
