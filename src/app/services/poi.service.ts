@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Poi } from '../poi';
 import { Tour } from '../tour';
 import { Rest } from '../rest';
-import { environment } from '../../environments/environment'
+import { environment, APIURL } from '../../environments/environment.prod'
 
 let token = sessionStorage.getItem('token')
 const APIKEY = environment.APIKEY
@@ -49,71 +49,71 @@ export class PoiService {
   }
 
   getCountries() {
-    return this.http.get(`http://localhost:3000/country/getall`)
+    return this.http.get(`${APIURL}/country/getall`)
   }
 
   getCities(id) {
-    return this.http.get(`http://localhost:3000/id/getallcities/${id}`)
+    return this.http.get(`${APIURL}/id/getallcities/${id}`)
   }
 
   addPoi(name: string, name_suffix: string, url: string) {
-    return this.http.post<Poi>(`http://localhost:3000/bucketpoi/create`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
+    return this.http.post<Poi>(`${APIURL}/bucketpoi/create`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
   }
 
   addTour(name: string, starts_on: string, url: string) {
-    return this.http.post<Tour>(`http://localhost:3000/buckettour/create`, {name:name, starts_on: starts_on, url: url}, httpOptions)
+    return this.http.post<Tour>(`${APIURL}/buckettour/create`, {name:name, starts_on: starts_on, url: url}, httpOptions)
   }
 
   addRest(name: string, name_suffix: string, url: string) {
-    return this.http.post<Rest>(`http://localhost:3000/bucketrest/create`, {name:name, name_suffix:name_suffix, url: url}, httpOptions)
+    return this.http.post<Rest>(`${APIURL}/bucketrest/create`, {name:name, name_suffix:name_suffix, url: url}, httpOptions)
   }
 
   accountPoi() {
-    return this.http.get(`http://localhost:3000/bucketpoi/getall`, httpOptions)
+    return this.http.get(`${APIURL}/bucketpoi/getall`, httpOptions)
   }
 
   accountRest() {
-    return this.http.get(`http://localhost:3000/bucketrest/getall`, httpOptions)
+    return this.http.get(`${APIURL}/bucketrest/getall`, httpOptions)
   }
 
   accountTour() {
-    return this.http.get(`http://localhost:3000/buckettour/getall`, httpOptions)
+    return this.http.get(`${APIURL}/buckettour/getall`, httpOptions)
   }
 
   completedPoi(name: string, name_suffix: string, url: string) {
-    return this.http.post<Poi>(`http://localhost:3000/completepoi/completed`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
+    return this.http.post<Poi>(`${APIURL}/completepoi/completed`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
   }
 
   completedRest(name: string, name_suffix: string, url: string) {
-    return this.http.post<Rest>(`http://localhost:3000/completerest/completed`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
+    return this.http.post<Rest>(`${APIURL}/completerest/completed`, {name: name, name_suffix: name_suffix, url: url}, httpOptions)
   }
 
   completedTour(name: string, starts_on: string, url: string) {
-    return this.http.post<Tour>(`http://localhost:3000/completetour/completed`,{name:name, starts_on: starts_on, url: url}, httpOptions)
+    return this.http.post<Tour>(`${APIURL}/completetour/completed`,{name:name, starts_on: starts_on, url: url}, httpOptions)
   }
 
   getCompletedPoi() {
-    return this.http.get(`http://localhost:3000/completepoi/getall`, httpOptions)
+    return this.http.get(`${APIURL}/completepoi/getall`, httpOptions)
   }
 
   getCompletedRest() {
-    return this.http.get(`http://localhost:3000/completerest/getall`, httpOptions)
+    return this.http.get(`${APIURL}/completerest/getall`, httpOptions)
   }
 
   getCompletedTour() {
-    return this.http.get(`http://localhost:3000/completetour/getall`, httpOptions)
+    return this.http.get(`${APIURL}/completetour/getall`, httpOptions)
   }
 
   deletePoi(id){
-    return this.http.delete(`http://localhost:3000/bucketpoi/delete/${id}`,
+    return this.http.delete(`${APIURL}/bucketpoi/delete/${id}`,
     httpOptions)
   }
 
   deleteRest(id) {
-    return this.http.delete(`http://localhost:3000/bucketrest/delete/${id}`, httpOptions)
+    return this.http.delete(`${APIURL}/bucketrest/delete/${id}`, httpOptions)
   }
 
   deleteTour(id) {
-    return this.http.delete(`http://localhost:3000/buckettour/delete/${id}`, httpOptions)
+    return this.http.delete(`${APIURL}/buckettour/delete/${id}`, httpOptions)
   }
 }
