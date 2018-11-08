@@ -80,6 +80,15 @@ button {
   text-align: center;
   margin: auto;
   }
+
+  .jumbo {
+    background-image: url(../../assets/poi-jumbo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
 }
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
@@ -95,6 +104,15 @@ button {
   border-radius: 5px;
   text-align: center;
   margin: auto;
+  }
+
+  .jumbo {
+    background-image: url(../../assets/poi-jumbo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
 /* Iphone 6/7/8 Plus COMPLETE */
@@ -112,6 +130,14 @@ button {
   text-align: center;
   margin: auto;
   }
+  .jumbo {
+    background-image: url(../../assets/poi-jumbo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
 }
 /* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 412px) {
@@ -122,11 +148,19 @@ button {
   box-shadow: 2px 4px 20px black;
   border: 1px solid whitesmoke;
   transition: 0.3s;
-  width: 43vh;
+  width: 38vh;
   height: 100%;
   border-radius: 5px;
   text-align: center;
   margin: auto;
+  }
+  .jumbo {
+    background-image: url(../../assets/poi-jumbo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 }
 /* Iphone 5/SE & Galaxy S5 */
@@ -144,4 +178,13 @@ button {
   text-align: center;
   margin: auto;
   }
+  .jumbo {
+    background-image: url(../../assets/poi-jumbo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
 }
+
