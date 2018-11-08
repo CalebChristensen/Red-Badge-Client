@@ -8,22 +8,18 @@
 }
 
 /* Button Groups / Media Queries */
-
 /* Desktop PC */
-.accountInfo {
+.accountInfo { /* This div can move and position both Account Edit section and Notes */
   float:left;
   margin-left: 30vh;
   margin-top: 2vh;
   max-width: 50vh;
-  
 }
-
-.bucketList {
+.bucketList { /* This div holds your Bucket List and Completed Activities */
   float: right;
   margin-right: 25vh;
   margin-top: 4vh;
 }
-
 /* Responsive */
 @media screen and (max-width: 1159px) {
   .accountInfo {
@@ -31,7 +27,6 @@
     margin-left: 10vh;
     margin-top: 2.5vh;
     max-width: 20vh;
-    
   }
   
   .bucketList {
@@ -40,7 +35,6 @@
     margin-top: 4vh;
   }
 }
-
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .accountInfo {
@@ -65,7 +59,6 @@
     margin-top: 4vh;
   }
 }
-
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .accountInfo {
@@ -90,7 +83,6 @@
     margin-top: 4vh;
   }
 }
-
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .accountInfo {
@@ -115,7 +107,6 @@
     margin-top: 4vh;
   }
 }
-
 /* Pixel 2 & Pixel 2 XL COMPLETE */
 @media screen and (max-width: 412px) {
   .accountInfo {
@@ -140,7 +131,6 @@
     margin-top: 4vh;
   }
 }
-
 /* iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 400px) {
   .accountInfo {
@@ -165,7 +155,6 @@
     margin-top: 4vh;
   }
 }
-
 /* Galaxy S5 */
 @media screen and (max-width: 375px) {
   .accountInfo {
@@ -190,7 +179,6 @@
     margin-top: 4vh;
   }
 }
-
 /* Iphone 5/SE */
 @media screen and (max-width: 330px) {
   .accountInfo {
@@ -217,7 +205,6 @@
 }
 
 /* Text Color & Buttons */
-
 .title {
   text-align: center;
   top: 43%;
@@ -251,7 +238,6 @@ Button {
 }
 
 /* Notes Text */
-
 .notesStuff {
   display: block
 }

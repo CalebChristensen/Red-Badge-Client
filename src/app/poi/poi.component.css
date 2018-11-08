@@ -1,3 +1,13 @@
+/* Background Picture */
+.jumbo {
+  background-image: url(../../assets/poi-jumbo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Fonts & Buttons */
 a {
   color: darkorange;
 }
@@ -7,9 +17,13 @@ p {
   font-size: 12px;
 }
 
-.card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange
 }
+
+/* Inside of the Card Content & Styling */
 .cardContainer {
   padding: 2px 16px;
 }
@@ -18,14 +32,12 @@ p {
   height: 150px;
 }
 
-.jumbo {
-  background-image: url(../../assets/poi-jumbo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
 }
-.card2 {
+
+/* Card Exterior Size */
+.card2 { /* This Card is solely for Tour Divs */
   background-image: url(../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,15 +50,9 @@ p {
   text-align: center;
   margin: auto;
 }
-
-button {
-  border: 1px solid black;
-  margin: 5px;
-  background-color: darkorange
-}
-
+/* | MEDIA QUERIES | */
 /* Desktop PC & Responsive */
-.card {
+.card {  /* This Card is for Restauraunts and POI's Divs */
   background-image: url(../../assets/example-card.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +65,6 @@ button {
   text-align: center;
   margin: auto;
 }
-
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .card {
@@ -76,7 +81,6 @@ button {
   margin: auto;
   }
 }
-
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .card {
@@ -93,7 +97,6 @@ button {
   margin: auto;
   }
 }
-
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .card {
@@ -110,7 +113,6 @@ button {
   margin: auto;
   }
 }
-
 /* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 412px) {
   .card {
@@ -127,7 +129,6 @@ button {
   margin: auto;
   }
 }
-
 /* Iphone 5/SE & Galaxy S5 */
 @media screen and (max-width: 375px) {
   .card {
