@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { MatDialog } from '@angular/material';
 import { UpdAccModalComponent } from '../modals/upd-acc-modal/upd-acc-modal.component';
-import { DelAccModalComponent } from '../modals/del-acc-modal/del-acc-modal.component';
 import { AdminDelModalComponent } from '../modals/admin-del-modal/admin-del-modal.component';
 
 @Component({

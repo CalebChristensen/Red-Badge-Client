@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { FormControl } from '@angular/forms';
 import { MatDialogRef } from '@angular/material';
-import { AccountComponent } from 'src/app/account/account.component';
 
 @Component({
   selector: 'app-upd-acc-modal',
