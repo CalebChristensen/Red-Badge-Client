@@ -1,10 +1,8 @@
+/* Interior Div Edits */
 a {
   color: darkorange;
 }
 
-.card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-}
 .cardContainer {
   padding: 2px 8px;
 }
@@ -15,6 +13,11 @@ button {
   background-color: darkorange
 }
 
+/* Exterior Div Edits */
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+/* | MEDIA QUERIES | */
 /* Desktop PC & Responsive */
 .card {
   background-image: url(../../../assets/example-card.jpg);
@@ -29,7 +32,6 @@ button {
   text-align: center;
   margin: auto;
 }
-
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .card {
@@ -46,7 +48,6 @@ button {
   margin: auto;
   }
 }
-
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .card {
@@ -63,7 +64,6 @@ button {
   margin: auto;
   }
 }
-
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .card {
@@ -80,7 +80,6 @@ button {
   margin: auto;
   }
 }
-
 /* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 412px) {
   .card {
@@ -97,7 +96,6 @@ button {
   margin: auto;
   }
 }
-
 /* Iphone 5/SE & Galaxy S5 */
 @media screen and (max-width: 375px) {
   .card {

@@ -1,3 +1,4 @@
+/* Background Image */
 .jumbo {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -6,40 +7,7 @@
   width: 100%;
 }
 
-.logo {
-  font-family: 'Monoton', cursive;
-  color: whitesmoke;
-  border: 5px;
-  font-size: 8vw;
-  position: absolute;
-  z-index: 1;
-  top: 43%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-.wrapper {
-  text-align: center;
-  color: white;
-  padding-top: 5em;
-  background-color: black;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-button {
-  border: 1px solid black;
-  margin: 5px;
-  background-color: darkorange;
-}
-
-a {
-  color: darkorange;
-}
-
+/* | MEDIA QUERIES | */
 /* Desktop PC */
 .logo {
   font-family: 'Monoton', cursive;
@@ -54,7 +22,6 @@ a {
   left: 0;
   right: 0;
 }
-
 /* Responsive */
 @media screen and (max-width: 1157px) {
   .logo {
@@ -88,7 +55,6 @@ a {
     right: 0;
   }
 }
-
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .logo {
@@ -105,7 +71,6 @@ a {
     right: 0;
   }
 }
-
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .logo {
@@ -122,7 +87,6 @@ a {
     right: 0;
   }
 }
-
 /* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 412px) {
   .logo {
@@ -139,7 +103,6 @@ a {
     right: 0;
   }
 }
-
 /* Iphone 5/SE & Galaxy S5 */
 @media screen and (max-width: 375px) {
   .logo {
@@ -155,4 +118,29 @@ a {
     left: 0;
     right: 0;
   }
+}
+
+/* Home Page Text Below The Hero */
+.wrapper {
+  text-align: center;
+  color: white;
+  padding-top: 5em;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange;
+}
+
+a {
+  color: darkorange;
+}
+
+.admin {
+  font-size: 13px;
 }
