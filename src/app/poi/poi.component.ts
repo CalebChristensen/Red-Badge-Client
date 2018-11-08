@@ -16,6 +16,7 @@ export class PoiComponent implements OnInit {
   poi: any
   restaurants: any
   trips: any
+  selectedItem: any
 
 
   constructor(
