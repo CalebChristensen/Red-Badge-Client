@@ -20,8 +20,9 @@ export class PoiModalComponent implements OnInit {
     this.poi.accountPoi().subscribe(data => this.places = data)
   }
 
-  completedPoi(name: string, name_suffix: string, url: string) {
+  completedPoi(name: string, name_suffix: string, url: string, id) {
     this.poi.completedPoi(name, name_suffix, url).subscribe()
+    this.deletePoi(id)
     window.location.reload()
   }
 

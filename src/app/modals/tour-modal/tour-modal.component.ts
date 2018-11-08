@@ -20,8 +20,9 @@ export class TourModalComponent implements OnInit {
     this.poi.accountTour().subscribe(data => this.tour = data)
   }
 
-  completedTour(name: string, starts_on: string, url: string) {
+  completedTour(name: string, starts_on: string, url: string, id) {
     this.poi.completedTour(name, starts_on, url).subscribe()
+    this.deleteTour(id)
     window.location.reload()
   }
 
