@@ -20,8 +20,10 @@ export class RestModalComponent implements OnInit {
     this.poi.accountRest().subscribe(data => this.rest = data)
   }
 
-  completedRest(name: string, name_suffix: string, url: string) {
+  completedRest(name: string, name_suffix: string, url: string, id) {
     this.poi.completedRest(name, name_suffix, url).subscribe()
+    this.deleteRest(id)
+    window.location.reload()
   }
 
   deleteRest(id) {
