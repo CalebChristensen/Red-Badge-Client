@@ -15,6 +15,7 @@
     <button mat-raised-button type='submit' (click)='getRestaurants()'>Top Restaurants</button>
     <button mat-raised-button type='submit' (click)='getTrips()'>Book a Tour</button>
   </form>
+  <p style="text-align: center">*Not All Cities Have Information. Some Searches May Return Empty.</p>
   <br /> <br />
   <div *ngIf='poi'>
     <div *ngFor='let places of poi.data.places'>
