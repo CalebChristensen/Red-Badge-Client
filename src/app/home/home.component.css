@@ -38,6 +38,7 @@
     right: 0;
   }
 }
+
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .logo {
@@ -138,4 +139,8 @@ button {
 
 a {
   color: darkorange;
+}
+
+.admin {
+  font-size: 13px;
 }
