@@ -72,6 +72,10 @@ a {
   }
 }
 
+.admin {
+  font-size: 13px;
+}
+
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .logo {
