@@ -1,0 +1,15 @@
+<div *ngIf='places' class="animated fadeIn slower">
+  <div *ngFor='let poi of places'>
+    <div class="card">
+      <div class="cardContainer">
+        <h3>{{ poi.name }}</h3>
+        <p><i> {{ poi.name_suffix }} </i></p>
+        <p>Website: <br /><a href="{{ poi.url }}">Click For More Information</a> </p>
+        <button mat-raised-button (click)='completedPoi(poi.name, poi.name_suffix, poi.url, poi.id)'><i class="fas fa-check"></i></button>
+        <button mat-raised-button (click)='deletePoi(poi.id)'><i class="fas fa-trash-alt"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button mat-raised-button (click)='close()' class="animated fadeIn slower">Cancel</button>

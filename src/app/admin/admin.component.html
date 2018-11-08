@@ -1,0 +1,12 @@
+<div class="jumbo animated fadeIn slower">
+<div class="card" *ngIf='results'>
+  <div *ngFor='let user of results'>
+    <br />
+    <h1>User ID: {{user.id}}</h1>
+    <p>Username: {{user.username}}</p>
+    <p>Email: {{user.email}}</p>
+    <button mat-raised-button (click)='openUpdateDialog(user.id)'>Update Account</button>
+    <button mat-raised-button (click)='openDeleteDialog(user.id)'>Delete Account</button>
+  </div>
+</div>
+</div>

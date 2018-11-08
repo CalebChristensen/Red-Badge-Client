@@ -1,0 +1,42 @@
+<div class="jumbo">
+  <div>
+    <div class="auth-container">
+      <mat-card class="example-card" fxLayoutAlign="center center">
+        <mat-card-content>
+          <mat-card-header fxLayoutAlign="center center">
+            <mat-card-title class="header">Sign Up</mat-card-title>
+          </mat-card-header>
+          <form (ngSubmit)="signUp()">
+            <table cellspacing="0">
+              <tr>
+                <td>
+                  <mat-form-field>
+                    <input matInput placeholder="Username" type="text" id="username" [formControl]="username" class="form-control" />
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <mat-form-field>
+                    <input matInput placeholder="Email" type="email" id="email" [formControl]="email" class="form-control" />
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <mat-form-field>
+                    <input matInput placeholder="Password" type="password" id="password" minLength="5" required [formControl]="password" class="form-control" />
+                  </mat-form-field>
+                </td>
+              </tr>
+            </table>
+            <button mat-raised-button type="submit" class="btn1">Submit</button>
+            <br /> <br />
+            <a routerLink="/login" style="color: whitesmoke">Already have an account?</a>
+          </form>
+          <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

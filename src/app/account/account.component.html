@@ -1,0 +1,62 @@
+<!-- ACCOUNT -->
+<div class="jumbo animated fadeIn slower" *ngIf='userData'>
+  <h1 class='title'>{{userData.username}}'s Account</h1>
+  <div class="accountInfo">
+    <div style="text-align: center">
+      <div>
+        <h3>Account Info</h3>
+        Username: {{userData.username}}
+        <br />
+        Email: {{userData.email}}
+        <br /><br />
+        <button mat-raised-button class="btn1" (click)='openUpdateDialog(userData.id)'>Update Account Information</button>
+        <button mat-raised-button class="btn1" (click)='openDeleteDialog()'>Delete Account</button>
+      </div>
+    </div>
+    <br><br>
+    <!-- NOTES -->
+    <h3 style='text-align: center'>Notes</h3>
+    <div fxLayoutAlign='center center'>
+      <ul *ngIf='notes'>
+        <div *ngFor='let note of notes' class='notesStuff'>
+          <div>
+            <div class='noteLeft'>
+              <li> {{note.note}} </li>
+              <br>
+            </div>
+            <div class='noteRight'>
+              <button (click)='updateNoteDialog(note.id)'>Update</button>
+              <button (click)='deleteNoteDialog(note.id)'>Delete</button>
+              <br>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <div fxLayoutAlign='center center'>
+      <button mat-raised-button (click)='openNoteDialog()' fxLayoutAlign='center'>Add Note</button>
+    </div>
+  </div>
+  <br /><br>
+  <!-- BUCKET LIST -->
+  <div class="bucketList">
+    <h3 style="text-align: center">Bucket List</h3>
+    <div fxLayoutAlign="center center" style="text-align: center">
+      <form>
+      <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
+      <button mat-raised-button (click)='openRestDialog()'>Saved Restaurants</button>
+      <button mat-raised-button (click)='openTourDialog()'>Saved Tours</button>
+    </form>
+    </div>
+    <br /><br /><br />
+    <!-- COMPLETED LIST -->
+    <h3 style="text-align: center">Completed Activities</h3>
+    <div fxLayoutAlign="center center" style="text-align: center">
+      <form>
+      <button mat-raised-button (click)='openCompletedPoiDialog()'>Completed Points Of Interest</button>
+      <button mat-raised-button (click)='openCompletedRestDialog()'>Completed Restaurants</button>
+      <button mat-raised-button (click)='openCompletedTourDialog()'>Completed Tours</button>
+    </form>
+    </div>
+  </div>
+</div>

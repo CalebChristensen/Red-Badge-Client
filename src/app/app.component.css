@@ -1,0 +1,21 @@
+/* Navbar Background */
+.navbar {
+  background-image: url(../assets/navbar-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Buttons on Navbar */
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange;
+  height: 40px
+}
+.hopesFav { /* Hopes Thanos Glove Design */
+  height: 34px;
+}
+
+/* Shortens The Navbars Height */
+.mat-card {
+  padding: 4px;
+}

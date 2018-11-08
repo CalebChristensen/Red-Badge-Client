@@ -1,0 +1,147 @@
+/* Background Picture */
+.jumbo {
+  background-image: url(../../assets/poi-jumbo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Fonts & Buttons */
+a {
+  color: darkorange;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange
+}
+
+/* Inside of the Card Content & Styling */
+.cardContainer {
+  padding: 2px 16px;
+}
+
+.poiPicture {
+  height: 150px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+/* Card Exterior Size */
+.card2 { /* This Card is solely for Tour Divs */
+  background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 43vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+}
+/* | MEDIA QUERIES | */
+/* Desktop PC & Responsive */
+.card {  /* This Card is for Restauraunts and POI's Divs */
+  background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 90vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+}
+/* Ipad Pro COMPLETE */
+@media screen and (max-width: 1024px) {
+  .card {
+    background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 70vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  }
+}
+/* Ipad COMPLETE */
+@media screen and (max-width: 769px) {
+  .card {
+    background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 68vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  }
+}
+/* Iphone 6/7/8 Plus COMPLETE */
+@media screen and (max-width: 414px) {
+  .card {
+  background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 53vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  }
+}
+/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 412px) {
+  .card {
+  background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 43vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  }
+}
+/* Iphone 5/SE & Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .card {
+  background-image: url(../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 52vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  }
+}

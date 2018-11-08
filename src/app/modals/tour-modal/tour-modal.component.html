@@ -1,0 +1,15 @@
+<div *ngIf='tour' class="animated fadeIn slower">
+  <div *ngFor='let trip of tour'>
+    <div class='card'>
+      <div class='cardContainer2'>
+        <h3>{{ trip.name }}</h3>
+        <p>Date {{ trip.starts_on }}</p>
+        <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
+        <button mat-raised-button (click)='completedTour(trip.name, trip.starts_on, trip.url, trip.id)'><i class="fas fa-check"></i></button>
+        <button mat-raised-button (click)='deleteTour(trip.id)'><i class="fas fa-trash-alt"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button mat-raised-button (click)='close()' class="animated fadeIn slower">Cancel</button>

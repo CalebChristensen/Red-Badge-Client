@@ -1,0 +1,13 @@
+<div *ngIf='rest' class="animated fadeIn slower">
+  <div *ngFor='let restaurant of rest'>
+    <div class='card'>
+      <div class='cardContainer'>
+        <h3>{{ restaurant.name }}</h3>
+        <p><i>{{ restaurant.name_suffix }}</i></p>
+        <p>Website: <br /><a href="{{ restaurant.url }}">Click for More Information</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button mat-raised-button (click)='close()' class="animated fadeIn slower">Cancel</button>

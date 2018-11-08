@@ -1,0 +1,114 @@
+/* Background Image */
+.jumbo {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../../assets/adminpage.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Buttons */
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange;
+}
+
+/* | MEDIA QUERIES | */
+/* Desktop PC */
+.card { /* This div controls the grid in which all account info is displayed */
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: rgb(32, 30, 30);
+  color: white;
+  text-align: center;
+  background-color: transparent;
+}
+/* Responsive */
+@media screen and (max-width: 1157px) {
+  .card {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    background-color: transparent;
+  }
+}
+/* Ipad Pro COMPLETE */
+@media screen and (max-width: 1024px) {
+  .card {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    background-color: transparent;
+  }
+}
+/* Ipad COMPLETE */
+@media screen and (max-width: 769px) {
+  .card {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    background-color: transparent;
+  }
+}
+/* Iphone 6/7/8 Plus COMPLETE */
+@media screen and (max-width: 414px) {
+  .card {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    background-color: transparent;
+  }
+}
+/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 412px) {
+  .card {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    background-color: transparent;
+  }
+}
+/* Iphone 5/SE & Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .card {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    background-color: transparent;
+  }
+}

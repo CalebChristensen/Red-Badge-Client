@@ -1,0 +1,66 @@
+<div class="jumbo animated fadeIn slower">
+  <form style="text-align: center">
+    <br />
+    <select class="dropDown" [formControl]="countryName" (model)="selectedItem" (change)='getCities()'>
+      <option disabled selected value>-- Select a Country --</option>
+      <option *ngFor="let countries of array" value={{countries.countryIds}}>{{ countries.countryName }}</option>
+    </select>
+    <br /><br />
+    <select *ngIf='cities' [formControl]='cityName'>
+      <option disabled selected value>-- Select a City --</option>
+      <option *ngFor="let city of cities" value={{city.cityIds}}>{{ city.cityName }}</option>
+    </select>
+    <br /><br />
+    <button mat-raised-button type='submit' (click)='getPoi()'>Points Of Interest</button>
+    <button mat-raised-button type='submit' (click)='getRestaurants()'>Top Restaurants</button>
+    <button mat-raised-button type='submit' (click)='getTrips()'>Book a Tour</button>
+  </form>
+  <p style="text-align: center">*Not All Cities Have Information. Some Searches May Return Empty.</p>
+  <br /> <br />
+  <div *ngIf='poi'>
+    <div *ngFor='let places of poi.data.places'>
+      <div class="card animated fadeInUp slower">
+        <div class="cardContainer">
+          <h3>{{ places.name }}</h3>
+          <p><i> {{ places.name_suffix }} </i></p>
+          <p>Original Name:<br /> {{ places.original_name }}</p>
+          <p>{{ places.perex }}</p>
+          <img class="poiPicture" src="{{ places.thumbnail_url }}" />
+          <p>Website: <br /><a href="{{ places.url }}">Click For More Information</a> </p>
+          <button mat-raised-button type='submit' (click)='addPoi(places.name, places.name_suffix, places.url)'>Add To Bucketlist</button>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf='restaurants'>
+    <div *ngFor='let restaurant of restaurants.data.places'>
+      <div class='card animated fadeInUp slower'>
+        <div class='cardContainer'>
+          <h3>{{ restaurant.name }}</h3>
+          <p><i>{{ restaurant.name_suffix }}</i></p>
+          <p>Original Name: <br /> {{ restaurant.original_name }}</p>
+          <p>{{ restaurant.perex }}</p>
+          <img class="poiPicture" src="{{ restaurant.thumbnail_url }}" />
+          <p>Website: <br /><a href="{{ restaurant.url }}">Click for More Information</a></p>
+          <button mat-raised-button type='submit' (click)='addRest(restaurant.name, restaurant.name_suffix, restaurant.url)'>Add To Bucketlist</button>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf='trips'>
+    <div *ngFor='let trip of trips.data.trips'>
+      <div class='card2 animated fadeInUp slower'>
+        <div class='cardContainer2'>
+          <h3>{{ trip.name }}</h3>
+          <p>Dates: {{ trip.starts_on }} - {{ trip.ends_on }}</p>
+          <p>Day Count: {{ trip.day_count }}</p>
+          <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
+          <button mat-raised-button type='submit' (click)='addTour(trip.name, trip.starts_on, trip.url)'>Add To Bucketlist</button>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

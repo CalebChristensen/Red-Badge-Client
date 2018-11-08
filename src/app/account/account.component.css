@@ -1,0 +1,254 @@
+/* Background Image */
+.jumbo {
+  background-image: url(../../assets/bnobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Button Groups / Media Queries */
+/* Desktop PC */
+.accountInfo { /* This div can move and position both Account Edit section and Notes */
+  float:left;
+  margin-left: 30vh;
+  margin-top: 2vh;
+  max-width: 50vh;
+}
+.bucketList { /* This div holds your Bucket List and Completed Activities */
+  float: right;
+  margin-right: 25vh;
+  margin-top: 4vh;
+}
+/* Responsive */
+@media screen and (max-width: 1159px) {
+  .accountInfo {
+    float:left;
+    margin-left: 10vh;
+    margin-top: 2.5vh;
+    max-width: 20vh;
+  }
+  
+  .bucketList {
+    float: right;
+    margin-right: 5vh;
+    margin-top: 4vh;
+  }
+}
+/* Ipad Pro COMPLETE */
+@media screen and (max-width: 1024px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+/* Ipad COMPLETE */
+@media screen and (max-width: 769px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+/* Iphone 6/7/8 Plus COMPLETE */
+@media screen and (max-width: 414px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+/* Pixel 2 & Pixel 2 XL COMPLETE */
+@media screen and (max-width: 412px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+/* iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 400px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+/* Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+/* Iphone 5/SE */
+@media screen and (max-width: 330px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
+
+/* Text Color & Buttons */
+.title {
+  text-align: center;
+  top: 43%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+a {
+  color: darkorange;
+}
+
+h1 {
+  color: darkorange;
+}
+
+h3 {
+  color: darkorange;
+}
+
+li {
+  list-style: none;
+  padding: 3px 20px 0px 0px;
+  max-width: 10vw;
+}
+
+Button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange;
+  color: whitesmoke;
+}
+
+/* Notes Text */
+.notesStuff {
+  display: block
+}
+
+.noteLeft {
+  float: left;
+  width: 10vw
+}
+
+.noteRight {
+  float: right
+}
