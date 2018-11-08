@@ -1,21 +1,22 @@
+/* Background Image */
 .jumbo {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('../../assets/adminpage.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  
 }
 
+/* Buttons */
 button {
   border: 1px solid black;
   margin: 5px;
   background-color: darkorange;
 }
 
-
+/* | MEDIA QUERIES | */
 /* Desktop PC */
-.card {
+.card { /* This div controls the grid in which all account info is displayed */
   list-style-type: none;
   width: 100%;
   display: grid;
@@ -27,7 +28,6 @@ button {
   text-align: center;
   background-color: transparent;
 }
-
 /* Responsive */
 @media screen and (max-width: 1157px) {
   .card {
@@ -42,7 +42,6 @@ button {
     background-color: transparent;
   }
 }
-
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .card {
@@ -57,7 +56,6 @@ button {
     background-color: transparent;
   }
 }
-
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .card {
@@ -72,7 +70,6 @@ button {
     background-color: transparent;
   }
 }
-
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .card {
@@ -87,7 +84,6 @@ button {
     background-color: transparent;
   }
 }
-
 /* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
 @media screen and (max-width: 412px) {
   .card {
@@ -102,7 +98,6 @@ button {
     background-color: transparent;
   }
 }
-
 /* Iphone 5/SE & Galaxy S5 */
 @media screen and (max-width: 375px) {
   .card {
