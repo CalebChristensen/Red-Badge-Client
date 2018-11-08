@@ -1,23 +1,21 @@
-button {
-    border: 1px solid black;
-    margin: 5px;
-    background-color: darkorange;
-    height: 40px
-}
-
+/* Navbar Background */
 .navbar {
-  /* background-image: url(https://image.freepik.com/free-vector/geometric-background-in-orange-and-blue_1095-284.jpg); */
-  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5-qW8LSmtnArfxXqfp_c1G6H1fRTSDV3H-iJI48B3HJ2w-XM); */
   background-image: url(../assets/navbar-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.hopesFav {
+/* Buttons on Navbar */
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange;
+  height: 40px
+}
+.hopesFav { /* Hopes Thanos Glove Design */
   height: 34px;
 }
 
-/* Desktop PC & Responsive */
+/* Shortens The Navbars Height */
 .mat-card {
   padding: 4px;
 }
