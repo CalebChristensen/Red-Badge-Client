@@ -2,17 +2,13 @@ import { Component, OnInit } from '@angular/core'
 import { AccountService } from '../services/account.service'
 import { MatDialog } from '@angular/material'
 import { UpdAccModalComponent } from '../modals/upd-acc-modal/upd-acc-modal.component';
-import { FormControl } from '@angular/forms';
 import { DelAccModalComponent } from '../modals/del-acc-modal/del-acc-modal.component';
-import { PoiService } from '../services/poi.service';
 import { PoiModalComponent } from '../modals/poi-modal/poi-modal.component';
 import { TourModalComponent } from '../modals/tour-modal/tour-modal.component';
 import { RestModalComponent } from '../modals/rest-modal/rest-modal.component';
-
 import { CompletedPoiModalComponent } from '../modals/completed-poi-modal/completed-poi-modal.component';
 import { CompletedRestModalComponent } from '../modals/completed-rest-modal/completed-rest-modal.component';
 import { CompletedTourModalComponent } from '../modals/completed-tour-modal/completed-tour-modal.component';
-
 import { NoteModalComponent } from '../modals/note-modal/note-modal.component';
 import { NoteService } from '../services/note.service';
 import { DeleteNoteModalComponent } from '../modals/delete-note-modal/delete-note-modal.component';
@@ -26,9 +22,6 @@ import { UpdateNoteModalComponent } from '../modals/update-note-modal/update-not
 })
 export class AccountComponent implements OnInit {
 
-  // username = new FormControl()
-  // email = new FormControl()
-  // password = new FormControl()
   userData: Object
   poi: Object
   rest: Object

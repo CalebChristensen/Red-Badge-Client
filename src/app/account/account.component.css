@@ -226,10 +226,12 @@ h3 {
   color: darkorange;
 }
 
-
 li {
-  list-style: none
+  list-style: none;
+  padding: 3px 20px 0px 0px;
+  max-width: 10vw;
 }
+
 Button {
   border: 1px solid black;
   margin: 5px;
@@ -244,6 +246,7 @@ Button {
 
 .noteLeft {
   float: left;
+  width: 10vw
 }
 
 .noteRight {

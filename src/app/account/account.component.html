@@ -19,12 +19,16 @@
     <div fxLayoutAlign='center center'>
       <ul *ngIf='notes'>
         <div *ngFor='let note of notes' class='notesStuff'>
-          <div class='noteLeft'>
-            <li> {{note.note}} </li>
-          </div>
-          <div class='noteRight'>
-            <button (click)='updateNoteDialog(note.id)'>Update</button>
-            <button (click)='deleteNoteDialog(note.id)'>Delete</button>
+          <div>
+            <div class='noteLeft'>
+              <li> {{note.note}} </li>
+              <br>
+            </div>
+            <div class='noteRight'>
+              <button (click)='updateNoteDialog(note.id)'>Update</button>
+              <button (click)='deleteNoteDialog(note.id)'>Delete</button>
+              <br>
+            </div>
           </div>
         </div>
       </ul>
@@ -40,8 +44,8 @@
     <div fxLayoutAlign="center center" style="text-align: center">
       <form>
       <button mat-raised-button (click)='openPoiDialog()'>Saved Points Of Interest</button>
-      <button mat-raised-button type='submit' (click)='openRestDialog()'>Saved Restaurants</button>
-      <button mat-raised-button type='submit' (click)='openTourDialog()'>Saved Tours</button>
+      <button mat-raised-button (click)='openRestDialog()'>Saved Restaurants</button>
+      <button mat-raised-button (click)='openTourDialog()'>Saved Tours</button>
     </form>
     </div>
     <br /><br /><br />
@@ -50,8 +54,8 @@
     <div fxLayoutAlign="center center" style="text-align: center">
       <form>
       <button mat-raised-button (click)='openCompletedPoiDialog()'>Completed Points Of Interest</button>
-      <button mat-raised-button type='submit' (click)='openCompletedRestDialog()'>Completed Restaurants</button>
-      <button mat-raised-button type='submit' (click)='openCompletedTourDialog()'>Completed Tours</button>
+      <button mat-raised-button (click)='openCompletedRestDialog()'>Completed Restaurants</button>
+      <button mat-raised-button (click)='openCompletedTourDialog()'>Completed Tours</button>
     </form>
     </div>
   </div>

@@ -3,8 +3,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Poi } from '../poi';
 import { Tour } from '../tour';
 import { Rest } from '../rest';
+import { environment } from '../../environments/environment'
 
 let token = sessionStorage.getItem('token')
+const APIKEY = environment.APIKEY
 
 const httpOptions = {
   headers: new HttpHeaders({'Authorization': token})
@@ -18,31 +20,31 @@ export class PoiService {
   constructor(public http: HttpClient) {
     let headers: HttpHeaders = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
-    headers = headers.append('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO');
+    headers = headers.append('x-api-key', APIKEY);
     console.log('Hello POI Provider');
   }
 
   getPoi(id) {
     return this.http.get(`https://api.sygictravelapi.com/1.1/en/places/list?parents=city:${id}&categories=sightseeing&limit=10`, {
-      headers: new HttpHeaders().set('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO')
+      headers: new HttpHeaders().set('x-api-key', APIKEY)
     })
   }
 
   getMedia() {
     return this.http.get(`https://api.sygictravelapi.com/1.1/en/places/poi:530/media`, {
-      headers: new HttpHeaders().set('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO')
+      headers: new HttpHeaders().set('x-api-key', APIKEY)
     })
   }
 
   getRestaurants(id) {
     return this.http.get(`https://api.sygictravelapi.com/1.1/en/places/list?parents=city:${id}&categories=eating&limit=10`, {
-      headers: new HttpHeaders().set('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO') 
+      headers: new HttpHeaders().set('x-api-key', APIKEY) 
     })
   }
 
   getTrips(id) {
     return this.http.get(`https://api.sygictraveldata.com/1.1/en/trips/templates?parent_place_id=city:${id}`, {
-      headers: new HttpHeaders().set('x-api-key', '3XARRaE3NR4VdZpUIAgwO3wJ7I1mnDyp1WQK6CSO')
+      headers: new HttpHeaders().set('x-api-key', APIKEY)
     })
   }
 
