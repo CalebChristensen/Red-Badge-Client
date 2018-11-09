@@ -5,6 +5,7 @@
         <h3>{{ trip.name }}</h3>
         <p>Date {{ trip.starts_on }}</p>
         <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
+        <button mat-raised-button (click)='deleteCompletedTour(trip.id)'><i class="fas fa-trash-alt"></i></button>
       </div>
     </div>
   </div>

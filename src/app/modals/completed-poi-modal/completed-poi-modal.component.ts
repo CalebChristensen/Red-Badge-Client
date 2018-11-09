@@ -20,6 +20,12 @@ export class CompletedPoiModalComponent implements OnInit {
     this.poi.getCompletedPoi().subscribe(data => this.places = data)
   }
 
+  deleteCompletedPoi(id) {
+    this.poi.deleteCompletedPoi(id).subscribe()
+    this.dialog.close()
+    window.location.reload()
+  }
+
   close() {
     this.dialog.close()
   }

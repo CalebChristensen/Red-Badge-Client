@@ -21,6 +21,12 @@ export class CompletedTourModalComponent implements OnInit {
     this.poi.getCompletedTour().subscribe(data => this.tour = data)
   }
 
+  deleteCompletedTour(id) {
+    this.poi.deleteCompletedTour(id).subscribe()
+    this.dialog.close()
+    window.location.reload()
+  }
+
   close() {
     this.dialog.close()
   }
