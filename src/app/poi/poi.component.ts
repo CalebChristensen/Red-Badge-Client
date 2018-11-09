@@ -17,6 +17,7 @@ export class PoiComponent implements OnInit {
   restaurants: any
   trips: any
   selectedItem: any
+  token = sessionStorage.getItem('token')
 
 
   constructor(
@@ -56,14 +57,17 @@ export class PoiComponent implements OnInit {
 
     addPoi(name: string, name_suffix: string, url: string) {
       this.poiService.addPoi(name, name_suffix, url).subscribe()
+      alert(`${name} was added to your Places Of Interest BucketList!`)
     }
 
     addTour(name: string, start_on: string, url: string) {
       this.poiService.addTour(name, start_on, url).subscribe()
+      alert(`${name} was added to your Tours BucketList!`)
     }
 
     addRest(name: string, name_suffix: string, url: string) {
       this.poiService.addRest(name, name_suffix, url).subscribe()
+      alert(`${name} was added to your Restaurants BucketList!`)
     }
 
 
