@@ -4,30 +4,23 @@
       <mat-card-header fxLayoutAlign="center center">
           <mat-card-title class="header">Update Account Information</mat-card-title>
         </mat-card-header>
-      <form (ngSubmit)="update()">
+      <div>
         <table cellspacing="0">
           <tr>
             <td>
               <mat-form-field>
-                <input matInput placeholder="Username" type="text" id="username" [formControl]="username" class="form-control" />
+                <input matInput placeholder="Username" type="text" id="username" [(ngModel)]="newUser.username" class="form-control" />
               </mat-form-field>
             </td>
           </tr>
           <tr>
             <td>
               <mat-form-field>
-                <input matInput placeholder="Email" type="email" id="email" [formControl]="email" class="form-control" />
-              </mat-form-field>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <mat-form-field>
-                <input matInput placeholder="Password" type="password" id="password" [formControl]="password" class="form-control" />
+                <input matInput placeholder="Email" type="email" id="email" [(ngModel)]="newUser.email" class="form-control" />
               </mat-form-field>
             </td>
           </tr>
         </table>
-        <button mat-raised-button type="submit" class="btn1">Submit</button>
+        <button mat-raised-button type="submit" (click)='update()' class="btn1">Submit</button>
         <button mat-raised-button type='button' (click)='close()'>Cancel</button>
-      </form>
+      </div>

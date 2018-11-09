@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { APIURL } from '../../environments/environment.prod'
+import { Note } from '../note';
 
 let token = sessionStorage.getItem('token')
 
@@ -29,6 +30,10 @@ export class NoteService {
 
   getNotes() {
     return this.http.get(`${APIURL}/notes/`, httpOptions)
+  }
+
+  getNote(id) {
+    return this.http.get<Note>(`${APIURL}/notes/get/${id}`, httpOptions)
   }
 
 }

@@ -24,11 +24,10 @@ export class AuthService {
     return this.http.post<User>(`${APIURL}/user/signin`, { username: username, password: password })
   }
 
-  update(username: string, email: string, password: string, id) {
+  update(username: string, email: string, id) {
     const user = {
       username: username,
-      email: email,
-      passwordhash: password
+      email: email
     }
     return this.http.put(`${APIURL}/user/update/${id}`, user, httpOptions)
   }
