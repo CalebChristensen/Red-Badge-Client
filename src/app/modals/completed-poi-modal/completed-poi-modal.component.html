@@ -5,6 +5,7 @@
         <h3>{{ poi.name }}</h3>
         <p><i> {{ poi.name_suffix }} </i></p>
         <p>Website: <br /><a href="{{ poi.url }}">Click For More Information</a> </p>
+        <button mat-raised-button (click)='deleteCompletedPoi(poi.id)'><i class="fas fa-trash-alt"></i></button>
       </div>
     </div>
   </div>
