@@ -10,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class HomeComponent implements OnInit {
-  
+  token = sessionStorage.getItem('token')
+  noToken = sessionStorage.getItem('token: false')
 
   constructor() { }
   
