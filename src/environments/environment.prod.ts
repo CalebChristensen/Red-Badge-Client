@@ -10,9 +10,5 @@ switch (window.location.hostname) {
     APIURL = `https://red-badge-server.herokuapp.com`
     break
   default: 
-<<<<<<< HEAD
-    APIURL = 'https://red-badge-server.herokuapp.com'
-=======
     APIURL = `https://red-badge-server.herokuapp.com`
->>>>>>> 12e63f464451d810c762ce102614f48677a35d7e
 }
