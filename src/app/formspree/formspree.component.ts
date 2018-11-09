@@ -12,4 +12,8 @@ export class FormspreeComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit() {
+    
+  }
+
 }
