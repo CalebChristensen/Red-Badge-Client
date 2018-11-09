@@ -3,7 +3,7 @@
   background-image: url(../../assets/bnobg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   min-height: 100vh;
 }
 
@@ -40,7 +40,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 40%;
+    top: 40vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -51,7 +51,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 10vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -64,7 +64,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 45%;
+    top: 45vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -75,7 +75,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 10vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -89,7 +89,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 45%;
+    top: 45vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -100,7 +100,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 10vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -113,7 +113,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 75%;
+    top: 75vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -124,7 +124,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 20%;
+    top: 15vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -161,7 +161,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 90%;
+    top: 90vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -172,7 +172,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 25%;
+    top: 20vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -185,7 +185,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 85%;
+    top: 90vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -196,7 +196,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 25%;
+    top: 25vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -209,7 +209,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 110%;
+    top: 110vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -220,7 +220,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 30%;
+    top: 30vh;
     margin-left: auto;
     margin-right: auto;
     left: 0;

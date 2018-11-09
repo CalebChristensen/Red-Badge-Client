@@ -1,5 +1,16 @@
-<h2>Are you sure you want to delete your account?</h2>
-<h3>This action cannot be reversed!</h3>
-
-<button mat-raised-button (click)='delete()'>Yes, delete my account</button>
-<button mat-raised-button (click)='close()'>Cancel</button>
+<div class="auth-container">
+  <mat-card class="example-card" fxLayoutAlign="center center">
+    <mat-card-content>
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title class="header">Are you sure you want to delete your account?</mat-card-title>
+      </mat-card-header>
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title class="header">This action cannot be reversed!</mat-card-title>
+      </mat-card-header>
+      <form>
+        <button mat-raised-button (click)='delete()'>Yes, delete my account</button>
+        <button mat-raised-button (click)='close()'>Cancel</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

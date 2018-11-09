@@ -5,6 +5,10 @@ body {
   background-color: black;
   color: white;
 }
+.mat-dialog-container {
+  padding: 10px !important;
+  background-color: darkorange !important;
+}
 
 /* Desktop PC & Responsive */
 .cdk-overlay-pane {

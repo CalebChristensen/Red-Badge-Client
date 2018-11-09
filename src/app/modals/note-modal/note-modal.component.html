@@ -1,8 +1,16 @@
-<h3>Add Note</h3>
-<form (ngSubmit)='addNote()'>
-  <mat-form-field>
-    <textarea matInput placeholder='Add note' [formControl]='newNote'></textarea>
-  </mat-form-field>
-  <br><br>
-  <button mat-raised-button type='submit'>Add</button>
-</form>
+<div class="auth-container">
+  <mat-card class="example-card" fxLayoutAlign="center center">
+    <mat-card-content>
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title class="header">Add Note</mat-card-title>
+      </mat-card-header>
+      <form (ngSubmit)='addNote()'>
+        <mat-form-field>
+          <textarea matInput placeholder='Add note' [formControl]='newNote'></textarea>
+        </mat-form-field>
+        <br><br>
+        <button mat-raised-button type='submit'>Add</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
