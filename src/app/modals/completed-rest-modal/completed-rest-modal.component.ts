@@ -20,6 +20,12 @@ export class CompletedRestModalComponent implements OnInit {
     this.poi.getCompletedRest().subscribe(data => this.rest = data)
   }
 
+  deleteCompletedRest(id) {
+    this.poi.deleteCompletedRest(id).subscribe()
+    this.dialog.close()
+    window.location.reload()
+  }
+
   close() {
     this.dialog.close()
   }

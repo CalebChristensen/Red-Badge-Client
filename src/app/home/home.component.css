@@ -48,7 +48,7 @@
     font-size: 13vw;
     position: absolute;
     z-index: 1;
-    top: 31%;
+    top: 30%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -64,7 +64,7 @@
     font-size: 13vw;
     position: absolute;
     z-index: 1;
-    top: 33%;
+    top: 32%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -80,14 +80,14 @@
     font-size: 12vw;
     position: absolute;
     z-index: 1;
-    top: 39%;
+    top: 38%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
   }
 }
-/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+/* Pixel 2 & Pixel 2 XL COMPLETE */
 @media screen and (max-width: 412px) {
   .logo {
     font-family: 'Monoton', cursive;
@@ -96,7 +96,23 @@
     font-size: 12vw;
     position: absolute;
     z-index: 1;
-    top: 40%;
+    top: 38%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+/* iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 400px) {
+  .logo {
+    font-family: 'Monoton', cursive;
+    color: whitesmoke;
+    border: 5px;
+    font-size: 12vw;
+    position: absolute;
+    z-index: 1;
+    top: 39%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -112,7 +128,7 @@
     font-size: 12vw;
     position: absolute;
     z-index: 1;
-    top: 42%;
+    top: 39%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -124,11 +140,12 @@
 .wrapper {
   text-align: center;
   color: white;
-  padding-top: 5em;
+  padding: 1em;
   background-color: black;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 button {
