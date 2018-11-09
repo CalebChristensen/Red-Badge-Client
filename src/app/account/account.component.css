@@ -83,6 +83,31 @@
     margin-top: 4vh;
   }
 }
+
+/* Samsung Moto X */
+@media screen and (max-width: 769px) {
+  .accountInfo {
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 40vh;
+  }
+  
+  .bucketList {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4vh;
+  }
+}
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .accountInfo {
@@ -136,7 +161,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 80%;
+    top: 90%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -147,7 +172,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 20%;
+    top: 25%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -184,7 +209,7 @@
   .accountInfo {
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 110%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -195,7 +220,7 @@
   .bucketList {
     position: absolute;
     z-index: 1;
-    top: 25%;
+    top: 30%;
     margin-left: auto;
     margin-right: auto;
     left: 0;

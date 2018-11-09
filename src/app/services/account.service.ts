@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core'
 import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { APIURL } from '../../environments/environment.prod'
 
 let token = sessionStorage.getItem('token')
 
@@ -15,7 +16,7 @@ export class AccountService {
   constructor(private http: HttpClient) { }
 
   getUser() {
-    return this.http.get('http://localhost:3000/user', httpOptions)
+    return this.http.get(`${APIURL}/user`, httpOptions)
   }
 
 }
