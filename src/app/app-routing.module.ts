@@ -8,6 +8,7 @@ import { AccountComponent } from './account/account.component';
 import { FormspreeComponent } from './formspree/formspree.component';
 import { AuthGuard } from './services/auth.guard';
 import { AdminComponent } from './admin/admin.component';
+import { AdminGuard } from './services/admin.guard'
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -17,7 +18,7 @@ const routes: Routes = [
   {path: 'poi', component: PoiComponent},
   {path: 'account', component: AccountComponent, canActivate: [AuthGuard]},
   {path: 'formspree', component: FormspreeComponent},
-  {path: 'admin', component: AdminComponent}
+  {path: 'admin', component: AdminComponent, canActivate: [AdminGuard]}
 ];
 
 @NgModule({
