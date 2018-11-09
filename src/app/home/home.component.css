@@ -16,7 +16,7 @@
   font-size: 8vw;
   position: absolute;
   z-index: 1;
-  top: 26%;
+  top: 25%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -145,7 +145,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 button {
