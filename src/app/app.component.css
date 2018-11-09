@@ -3,13 +3,14 @@
   background-image: url(../assets/navbar-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50px;
 }
 /* Buttons on Navbar */
 button {
   border: 1px solid black;
-  margin: 5px;
+  margin: 2px;
   background-color: darkorange;
-  height: 40px
+  top: 5px;
 }
 .hopesFav { /* Hopes Thanos Glove Design */
   height: 34px;
@@ -19,3 +20,20 @@ button {
 .mat-card {
   padding: 4px;
 }
+
+/* Iphone 5/SE */
+@media screen and (max-width: 330px) {
+  button {
+    border: 1px solid black;
+    margin: 0px;
+    background-color: darkorange;
+    top: 5px;
+  }
+  .navbar {
+    background-image: url(../assets/navbar-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+  }
+}
+
