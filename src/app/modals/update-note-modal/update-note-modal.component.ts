@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NoteService } from 'src/app/services/note.service';
 import { MatDialogRef } from '@angular/material';
-import { FormControl } from '@angular/forms';
+import { Note } from '../../note'
 
 @Component({
   selector: 'app-update-note-modal',
@@ -10,7 +10,10 @@ import { FormControl } from '@angular/forms';
 })
 export class UpdateNoteModalComponent implements OnInit {
 
-  newNote = new FormControl()
+  newNote: Note = {
+    note: ''
+  }
+
   id = sessionStorage.getItem('noteId')
 
   constructor(
@@ -19,10 +22,13 @@ export class UpdateNoteModalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.note.getNote(this.id).subscribe(note => {
+      this.newNote.note = note.note
+    })
   }
 
   update() {
-    this.note.updateNote(this.newNote.value, this.id).subscribe()
+    this.note.updateNote(this.newNote.note, this.id).subscribe()
     this.dialog.close()
     window.location.reload()
   }
