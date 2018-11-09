@@ -10,5 +10,5 @@ switch (window.location.hostname) {
     APIURL = 'https://red-badge-server.herokuapp.com'
     break
   default: 
-    APIURL = 'http://localhost:3000'
+    APIURL = 'https://red-badge-server.herokuapp.com'
 }
