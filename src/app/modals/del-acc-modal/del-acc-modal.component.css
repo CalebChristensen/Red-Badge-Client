@@ -1,0 +1,83 @@
+/* Inside of the Login Div editing */
+.example-card {
+  background-image: url(../../../assets/example-card.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  justify-content: center;
+}
+
+button {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: darkorange
+}
+
+/* Controls the height and width of the login div */
+/* | MEDIA QUERIES | */
+/* Desktop PC & Responsive */
+.auth-container>* {
+  border-radius: 1em;
+  width: 80vh;
+  height: 30vh;
+}
+
+/* Ipad Pro COMPLETE */
+@media screen and (max-width: 1024px) {
+  .auth-container>* {
+    border-radius: 1em;
+    width: 60vh;
+    height: 20vh;
+  }
+}
+
+/* Ipad COMPLETE */
+@media screen and (max-width: 769px) {
+  .auth-container>* {
+    border-radius: 1em;
+    width: 60vh;
+    height: 20vh;
+  }
+}
+
+/* Iphone 6/7/8 Plus COMPLETE */
+@media screen and (max-width: 414px) {
+  .auth-container>* {
+    border-radius: 1em;
+    width: 50vh;
+    height: 30vh;
+  }
+}
+
+
+/* Pixel 2 & Pixel 2 XL COMPLETE */
+@media screen and (max-width: 412px) {
+  .auth-container>* {
+    border-radius: 1em;
+    width: 45vh;
+    height: 35vh;
+  }
+}
+
+/* iPhone 6/7/8 & iPhone X COMPLETE */
+@media screen and (max-width: 400px) {
+  .auth-container>* {
+    border-radius: 1em;
+    width: 43vh;
+    height: 50vh;
+  }
+}
+
+/* Iphone 5/SE & Galaxy S5 */
+@media screen and (max-width: 375px) {
+  .auth-container>* {
+    border-radius: 1em;
+    width: 50vh;
+    height: 50vh;
+  }
+}
