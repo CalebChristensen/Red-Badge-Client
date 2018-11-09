@@ -12,6 +12,13 @@ button {
   background-color: darkorange
 }
 
+.btn2 {
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  background-color: black;
+  color: whitesmoke;
+}
+
 /* Exterior Div Edits */
 .card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
