@@ -24,7 +24,11 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem('admin', user.user.admin)
       alert(user.message)
       window.location.href = '/home'
-    })
+    },
+    err => {
+      alert(err.error.message)
+    }
+    )
   }
 
 }

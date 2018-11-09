@@ -27,7 +27,7 @@
           <p>{{ places.perex }}</p>
           <img class="poiPicture" src="{{ places.thumbnail_url }}" />
           <p>Website: <br /><a href="{{ places.url }}">Click For More Information</a> </p>
-          <button mat-raised-button type='submit' (click)='addPoi(places.name, places.name_suffix, places.url)'>Add To Bucketlist</button>
+          <button mat-raised-button type='submit' (click)='addPoi(places.name, places.name_suffix, places.url)' *ngIf='token'>Add To Bucketlist</button>
           <br />
         </div>
       </div>
