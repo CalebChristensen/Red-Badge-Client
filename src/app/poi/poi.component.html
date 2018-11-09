@@ -43,7 +43,7 @@
           <p>{{ restaurant.perex }}</p>
           <img class="poiPicture" src="{{ restaurant.thumbnail_url }}" />
           <p>Website: <br /><a href="{{ restaurant.url }}">Click for More Information</a></p>
-          <button mat-raised-button type='submit' (click)='addRest(restaurant.name, restaurant.name_suffix, restaurant.url)'>Add To Bucketlist</button>
+          <button mat-raised-button type='submit' (click)='addRest(restaurant.name, restaurant.name_suffix, restaurant.url)' *ngIf='token'>Add To Bucketlist</button>
           <br />
         </div>
       </div>
@@ -57,7 +57,7 @@
           <p>Dates: {{ trip.starts_on }} - {{ trip.ends_on }}</p>
           <p>Day Count: {{ trip.day_count }}</p>
           <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
-          <button mat-raised-button type='submit' (click)='addTour(trip.name, trip.starts_on, trip.url)'>Add To Bucketlist</button>
+          <button mat-raised-button type='submit' (click)='addTour(trip.name, trip.starts_on, trip.url)' *ngIf='token'>Add To Bucketlist</button>
           <br />
         </div>
       </div>
