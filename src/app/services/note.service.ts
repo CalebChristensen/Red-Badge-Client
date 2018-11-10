@@ -17,7 +17,7 @@ export class NoteService {
   constructor(private http: HttpClient) { }
 
   addNote(note: string) {
-    return this.http.post(`${APIURL}/notes/create`, {note: note}, httpOptions)
+    return this.http.post(`https://red-badge-server.herokuapp.com/notes/create`, {note: note}, httpOptions)
   }
 
   deleteNote(id) {
