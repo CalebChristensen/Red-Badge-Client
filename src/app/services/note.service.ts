@@ -17,19 +17,19 @@ export class NoteService {
   constructor(private http: HttpClient) { }
 
   addNote(note: string) {
-    return this.http.post(`https://red-badge-server.herokuapp.com/notes/create`, {note: note}, httpOptions)
+    return this.http.post<Note>(`https://red-badge-server.herokuapp.com/notes/create`, {note: note}, httpOptions)
   }
 
   deleteNote(id) {
-    return this.http.delete(`${APIURL}/notes/delete/${id}`, httpOptions)
+    return this.http.delete<Note>(`${APIURL}/notes/delete/${id}`, httpOptions)
   }
 
   updateNote(note: string, id) {
-    return this.http.put(`${APIURL}/notes/update/${id}`, {note: note}, httpOptions)
+    return this.http.put<Note>(`${APIURL}/notes/update/${id}`, {note: note}, httpOptions)
   }
 
   getNotes() {
-    return this.http.get(`${APIURL}/notes/`, httpOptions)
+    return this.http.get<Note>(`${APIURL}/notes/`, httpOptions)
   }
 
   getNote(id) {
