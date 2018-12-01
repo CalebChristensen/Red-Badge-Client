@@ -17,11 +17,7 @@ export class NoteService {
   constructor(private http: HttpClient) { }
 
   addNote(note: string) {
-<<<<<<< HEAD
-    return this.http.post(`${APIURL}/notes/create`, {note: note}, httpOptions)
-=======
     return this.http.post<Note>(`${APIURL}/notes/create`, {note: note}, httpOptions)
->>>>>>> 87f1c6a103a8f01957e4da42430313ea872d89cb
   }
 
   deleteNote(id) {
