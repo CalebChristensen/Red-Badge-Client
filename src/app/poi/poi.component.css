@@ -32,6 +32,11 @@ button {
   height: 150px;
 }
 
+.mediaPicture {
+  height: 700px;
+  max-width: 100%
+}
+
 .card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
@@ -69,10 +74,38 @@ button {
   margin: auto;
 }
 
+.card3 {
+  /* This Card is for Restauraunts and POI's Divs */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 4px 20px black;
+  border: 1px solid whitesmoke;
+  transition: 0.3s;
+  width: 180vh;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+}
+
 /* Ipad Pro COMPLETE */
 @media screen and (max-width: 1024px) {
   .card {
     background-image: url(../../assets/example-card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 20px black;
+    border: 1px solid whitesmoke;
+    transition: 0.3s;
+    width: 70vh;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+  .card3 {
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 2px 4px 20px black;
@@ -93,12 +126,29 @@ button {
     background-attachment: fixed;
     min-height: 100vh;
   }
+  .mediaPicture {
+    height: 600px;
+    max-width: 100%
+  }
 }
 
 /* Ipad COMPLETE */
 @media screen and (max-width: 769px) {
   .card {
     background-image: url(../../assets/example-card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 20px black;
+    border: 1px solid whitesmoke;
+    transition: 0.3s;
+    width: 68vh;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+  .card3 {
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 2px 4px 20px black;
@@ -119,12 +169,29 @@ button {
     background-attachment: fixed;
     min-height: 100vh;
   }
+  .mediaPicture {
+    height: 600px;
+    max-width: 100%
+  }
 }
 
 /* Iphone 6/7/8 Plus COMPLETE */
 @media screen and (max-width: 414px) {
   .card {
     background-image: url(../../assets/example-card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 20px black;
+    border: 1px solid whitesmoke;
+    transition: 0.3s;
+    width: 53vh;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+  .card3 {
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 2px 4px 20px black;
@@ -145,9 +212,13 @@ button {
     background-attachment: fixed;
     min-height: 100vh;
   }
+  .mediaPicture {
+    height: 400px;
+    max-width: 100%
+  }
 }
 
-/* Pixel 2 & Pixel 2 XL & iPhone 6/7/8 & iPhone X COMPLETE */
+/* Pixel 2 & Pixel 2 XL COMPLETE */
 @media screen and (max-width: 412px) {
   .card {
     background-image: url(../../assets/example-card.jpg);
@@ -162,6 +233,19 @@ button {
     text-align: center;
     margin: auto;
   }
+  .card3 {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 20px black;
+    border: 1px solid whitesmoke;
+    transition: 0.3s;
+    width: 47vh;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
 
   .jumbo {
     background-image: url(../../assets/poi-jumbo.jpg);
@@ -171,12 +255,29 @@ button {
     background-attachment: fixed;
     min-height: 100vh;
   }
+  .mediaPicture {
+    height: 400px;
+    max-width: 100%
+  }
 }
 
 /* Iphone 5/SE & Galaxy S5 */
 @media screen and (max-width: 375px) {
   .card {
     background-image: url(../../assets/example-card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 4px 20px black;
+    border: 1px solid whitesmoke;
+    transition: 0.3s;
+    width: 52vh;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+  .card3 {
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 2px 4px 20px black;
@@ -196,5 +297,9 @@ button {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
+  }
+  .mediaPicture {
+    height: 400px;
+    max-width: 100%
   }
 }

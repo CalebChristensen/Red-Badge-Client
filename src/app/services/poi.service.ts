@@ -30,8 +30,8 @@ export class PoiService {
     })
   }
 
-  getMedia() {
-    return this.http.get(`https://api.sygictravelapi.com/1.1/en/places/poi:530/media`, {
+  getMedia(id) {
+    return this.http.get(`https://api.sygictravelapi.com/1.1/en/places/city:${id}/media`, {
       headers: new HttpHeaders().set('x-api-key', APIKEY)
     })
   }

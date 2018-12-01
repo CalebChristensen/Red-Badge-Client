@@ -14,6 +14,7 @@
     <button mat-raised-button type='submit' (click)='getPoi()'>Points Of Interest</button>
     <button mat-raised-button type='submit' (click)='getRestaurants()'>Top Restaurants</button>
     <button mat-raised-button type='submit' (click)='getTrips()'>Book a Tour</button>
+    <button mat-raised-button type='submit' (click)='getMedia()'>Top Photos</button>
   </form>
   <p style="text-align: center">*Not All Cities Have Information. Some Searches May Return Empty.</p>
   <br /> <br />
@@ -59,6 +60,15 @@
           <p><a href="{{ trip.url }}" target="_blank">Learn More</a></p>
           <button mat-raised-button type='submit' (click)='addTour(trip.name, trip.starts_on, trip.url)' *ngIf='token'>Add To Bucketlist</button>
           <br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf='media'>
+    <div *ngFor='let pics of media.data.media'>
+      <div class='card3 animated fadeInUp slower'>
+        <div class='cardContainer2'>
+          <img class="mediaPicture" src="{{ pics.url }}"/>
         </div>
       </div>
     </div>
